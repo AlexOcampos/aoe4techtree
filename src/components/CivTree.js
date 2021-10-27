@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { Building } from "../components";
+import HorizontalScroll from "react-scroll-horizontal";
 
 /* 
   Calculate the max number of items in each building, to set the 
@@ -40,78 +41,80 @@ const CivTree = ({ civTree }) => {
   return (
     //TODO: refactor in a loop
     <CivTreeContainer>
-      <div className="row">
-        {/* Dark Age */}
-        <div className="age-header">
-          <h1>I</h1>
+      <HorizontalScroll reverseScroll={true}>
+        <div className="row">
+          {/* Dark Age */}
+          <div className="age-header">
+            <h1>I</h1>
+          </div>
+          <div className="buildings">
+            {civTree.tree[0].items.map((building) => {
+              return (
+                <Building
+                  key={`dark-age-${building.name}`}
+                  building={building}
+                  age={1}
+                  columnsWidth={columnsWidth}
+                />
+              );
+            })}
+          </div>
         </div>
-        <div className="buildings">
-          {civTree.tree[0].items.map((building) => {
-            return (
-              <Building
-                key={`dark-age-${building.name}`}
-                building={building}
-                age={1}
-                columnsWidth={columnsWidth}
-              />
-            );
-          })}
+        <div className="row">
+          {/* Feudal Age */}
+          <div className="age-header">
+            <h1>II</h1>
+          </div>
+          <div className="buildings">
+            {civTree.tree[1].items.map((building) => {
+              return (
+                <Building
+                  key={`feudal-${building.name}`}
+                  building={building}
+                  age={2}
+                  columnsWidth={columnsWidth}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="row">
-        {/* Feudal Age */}
-        <div className="age-header">
-          <h1>II</h1>
+        <div className="row">
+          {/* Castle Age */}
+          <div className="age-header">
+            <h1>III</h1>
+          </div>
+          <div className="buildings">
+            {civTree.tree[2].items.map((building) => {
+              return (
+                <Building
+                  key={`castle-${building.name}`}
+                  building={building}
+                  age={3}
+                  columnsWidth={columnsWidth}
+                />
+              );
+            })}
+          </div>
         </div>
-        <div className="buildings">
-          {civTree.tree[1].items.map((building) => {
-            return (
-              <Building
-                key={`feudal-${building.name}`}
-                building={building}
-                age={2}
-                columnsWidth={columnsWidth}
-              />
-            );
-          })}
+        <div className="row last-row">
+          {/* Imperial Age */}
+          <div className="age-header">
+            <h1>IV</h1>
+          </div>
+          <div className="buildings">
+            {civTree.tree[3].items.map((building) => {
+              return (
+                <Building
+                  key={`imperial-${building.name}`}
+                  building={building}
+                  age={4}
+                  columnsWidth={columnsWidth}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="row">
-        {/* Castle Age */}
-        <div className="age-header">
-          <h1>III</h1>
-        </div>
-        <div className="buildings">
-          {civTree.tree[2].items.map((building) => {
-            return (
-              <Building
-                key={`castle-${building.name}`}
-                building={building}
-                age={3}
-                columnsWidth={columnsWidth}
-              />
-            );
-          })}
-        </div>
-      </div>
-      <div className="row last-row">
-        {/* Imperial Age */}
-        <div className="age-header">
-          <h1>IV</h1>
-        </div>
-        <div className="buildings">
-          {civTree.tree[3].items.map((building) => {
-            return (
-              <Building
-                key={`imperial-${building.name}`}
-                building={building}
-                age={4}
-                columnsWidth={columnsWidth}
-              />
-            );
-          })}
-        </div>
-      </div>
+      </HorizontalScroll>
     </CivTreeContainer>
   );
 };
@@ -119,6 +122,8 @@ const CivTree = ({ civTree }) => {
 const CivTreeContainer = styled.div`
   height: 100vh;
   margin-left: 2rem;
+  width: 70vw;
+  overflow: auto;
 
   .row {
     padding: 0;
@@ -165,6 +170,10 @@ const CivTreeContainer = styled.div`
 
   .align-center-x2 {
     justify-content: center;
+  }
+
+  .scroll-horizontal > div {
+    display: block !important;
   }
 `;
 
