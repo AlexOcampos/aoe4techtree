@@ -1,0 +1,56 @@
+{
+    "civilizations": [
+        {
+            "id": 2,
+            "name": "Abbasid Dinasty",
+            "image": "./flag_abbasid.png",
+            "civInfo": "abbasid"
+        },
+        {
+            "id": 1,
+            "name": "Chinese",
+            "image": "./flag_chinese.png",
+            "civInfo": "chinese"
+        },
+        {
+            "id": 5,
+            "name": "Holy Roman Empire",
+            "image": "./flag_hre.png",
+            "civInfo": "hre"
+        },
+        {
+            "id": 3,
+            "name": "English",
+            "image": "./flag_english.png",
+            "civInfo": "english"
+        },
+        {
+            "id": 4,
+            "name": "French",
+            "image": "./flag_french.png",
+            "civInfo": "french",
+            "comingSoon": true
+        },
+        {
+            "id": 6,
+            "name": "Mongol",
+            "image": "./flag_mongol.png",
+            "civInfo": "mongol",
+            "comingSoon": true
+        },
+        {
+            "id": 7,
+            "name": "Rus",
+            "image": "./flag_rus.png",
+            "civInfo": "rus",
+            "comingSoon": true
+        },
+        {
+            "id": 8,
+            "name": "Delhi Sultanate",
+            "image": "./flag_sultanates.png",
+            "civInfo": "delhi",
+            "comingSoon": true
+        }
+    ]
+}

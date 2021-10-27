@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --clr-primary-background: #151825;
+  --clr-grey-1: #404040;
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+
+  --clr-item-building: #4d190e;
+  --clr-item-unit: #3a6a80;
+  --clr-item-technology: #2c5729;
+
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Alef");
+
+body {
+  margin: 0;
+  font-family: "Alef";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-primary-background);
+  color: white;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+  padding: 0.9rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 400;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-grey-4);
+}
+
+.btn a {
+  text-transform: uppercase;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  font-weight: 400;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.btn a:hover {
+  color: var(--clr-white);
 }
