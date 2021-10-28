@@ -31,6 +31,12 @@ const AboutPage = () => {
             <a href="https://www.twitch.tv/pinch3terneira">Pinch3Terneira</a>{" "}
             for his colaboration in the project.
           </p>
+          <p>
+            Also thanks to MugenNoSora who make{" "}
+            <a href="https://docs.google.com/spreadsheets/d/1LG0We2pTFZsbFm_k1SKLix8gxSq_9n5R_Ic3G2tVzBg">
+              this great document
+            </a>
+          </p>
         </article>
         <article>
           <p>
@@ -57,7 +63,7 @@ const Wrapper = styled.section`
   .content {
     overflow: auto;
     width: 100vw;
-    height: 60%;
+    height: 70%;
 
     display: flex;
     flex-direction: column;
@@ -67,7 +73,7 @@ const Wrapper = styled.section`
   }
 
   article {
-    margin: 2rem;
+    margin: 1.2rem;
   }
 
   .support-logo {
