@@ -1,8 +1,15 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { HiMenu } from "react-icons/hi";
 
 const CivInfo = ({ civTree }) => {
   return (
     <CivInfoContainer className="civ-info">
+      <navbar>
+        <Link to={"/"}>
+          <HiMenu /> AoE4 Tech Tree
+        </Link>
+      </navbar>
       <div
         className="bg"
         style={{
@@ -63,10 +70,24 @@ const CivInfoContainer = styled.div`
   position: relative;
   z-index: 1;
 
+  navbar {
+    position: fixed;
+  }
+
+  navbar > * {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  navbar > *:hover {
+    text-decoration: none;
+    color: rgba(208, 159, 30, 1);
+  }
+
   .bg {
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 3rem;
     bottom: 0;
     left: 0;
     right: 0;
@@ -78,6 +99,7 @@ const CivInfoContainer = styled.div`
   }
 
   header {
+    margin-top: 3rem;
     margin-bottom: 6rem;
   }
 
