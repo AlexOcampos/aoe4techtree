@@ -1,7 +1,11 @@
 import styled from "styled-components";
-
 import { Building } from "../components";
 import HorizontalScroll from "react-scroll-horizontal";
+
+// ItemDetail
+import { BottomSheet } from "react-spring-bottom-sheet";
+import "react-spring-bottom-sheet/dist/style.css";
+import { useItemDetailContext } from "../context/itemdetail_context";
 
 /* 
   Calculate the max number of items in each building, to set the 
@@ -36,6 +40,8 @@ const calculateColumnsWidth = (tree) => {
 };
 
 const CivTree = ({ civTree }) => {
+  const { isItemDetailOpen, closeItemDetail, itemName, detail } =
+    useItemDetailContext();
   let columnsWidth = calculateColumnsWidth(civTree);
 
   return (
@@ -115,6 +121,49 @@ const CivTree = ({ civTree }) => {
           </div>
         </div>
       </HorizontalScroll>
+
+      <BottomSheet
+        open={isItemDetailOpen}
+        header={
+          <h1 className="popup-black" style={{ color: "black" }}>
+            {detail ? detail.customName : "<NO DATA>"}
+          </h1>
+        }
+        onDismiss={closeItemDetail}
+        defaultSnap={({ snapPoints, lastSnap }) =>
+          lastSnap ?? Math.min(...snapPoints)
+        }
+        snapPoints={({ maxHeight }) => [
+          maxHeight - maxHeight / 5,
+          maxHeight * 0.6,
+        ]}
+      >
+        {detail ? (
+          <div style={{ color: "black", overflow: "auto", margin: "2rem" }}>
+            <article>
+              {detail.itemDescription
+                ? detail.itemDescription
+                    .split("\\r\\n")
+                    .map((desc, i) => <p key={`itemDesc-${i}`}>{desc}</p>)
+                : ""}
+            </article>
+            <article>{detail.class}</article>
+            <article>
+              {detail.food && detail.food > 0 ? <p>Food: {detail.food}</p> : ""}
+              {detail.wood && detail.wood > 0 ? <p>Wood: {detail.wood}</p> : ""}
+              {detail.gold && detail.gold > 0 ? <p>Gold: {detail.gold}</p> : ""}
+              {detail.stone && detail.stone > 0 ? (
+                <p>Stone: {detail.stone}</p>
+              ) : (
+                ""
+              )}
+              {detail.time ? <p>Time: {detail.time}s</p> : ""}
+            </article>
+          </div>
+        ) : (
+          "No data"
+        )}
+      </BottomSheet>
     </CivTreeContainer>
   );
 };
@@ -124,6 +173,10 @@ const CivTreeContainer = styled.div`
   margin-left: 2rem;
   width: 70vw;
   overflow: auto;
+
+  .popup-container {
+    color: black;
+  }
 
   .row {
     padding: 0;

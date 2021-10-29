@@ -5,11 +5,11 @@ import { HiMenu } from "react-icons/hi";
 const CivInfo = ({ civTree }) => {
   return (
     <CivInfoContainer className="civ-info">
-      <navbar>
+      <nav>
         <Link to={"/"}>
           <HiMenu /> AoE4 Tech Tree
         </Link>
-      </navbar>
+      </nav>
       <div
         className="bg"
         style={{
@@ -70,16 +70,16 @@ const CivInfoContainer = styled.div`
   position: relative;
   z-index: 1;
 
-  navbar {
+  nav {
     position: fixed;
   }
 
-  navbar > * {
+  nav > * {
     text-decoration: none;
     color: #ffffff;
   }
 
-  navbar > *:hover {
+  nav > *:hover {
     text-decoration: none;
     color: rgba(208, 159, 30, 1);
   }

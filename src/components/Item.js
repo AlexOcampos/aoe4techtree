@@ -1,41 +1,16 @@
 import styled from "styled-components";
+import { useItemDetailContext } from "../context/itemdetail_context";
 
-const Item = ({
-  image,
-  name,
-  type,
-  placeholder,
-  size,
-  widthBuilding,
-  placeholderSize,
-}) => {
-  const _size = "small";
+const Item = ({ image, name, type, widthBuilding, itemId }) => {
+  const { openItemDetail } = useItemDetailContext();
 
   let bgColor = `var(--clr-item-${type})`;
   let marginLat = 0.5;
-  let width = 120;
-  let height = 100;
-
-  if (placeholder === "x3") {
-    marginLat = 8;
-  }
-
-  if (_size === "small") {
-    width = 80;
-    height = 80;
-  }
-  if (placeholder === "x3" && _size === "small") {
-    marginLat = 10;
-  }
-  if (placeholder === "x1" && _size === "small") {
-    marginLat = 0.1;
-  }
+  let width = 80;
+  let height = 80;
 
   if (type === "building") {
     marginLat = (widthBuilding - (width + 2)) / 2;
-    console.log(
-      `${name} - margin: ${marginLat} (${widthBuilding} - ${width + 2})/2`
-    );
   } else {
     marginLat = 4;
   }
@@ -49,6 +24,7 @@ const Item = ({
         width: `${width}px`,
         height: `${height}px`,
       }}
+      onClick={() => openItemDetail(itemId)}
     >
       <img src={image} alt={name} className={"img-small"} />
       <span>{name}</span>

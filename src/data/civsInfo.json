@@ -1,6 +1,7 @@
 {
     "abbasid": {
         "civId": 2,
+        "codeName": "AB",
         "civName": "Abbasid Dynasty",
         "shortDesc": "RESEARCH, ANTI-CAVALRY, GOLDEN AGE",
         "longDesc": "The Abbasid Dynasty pursues a flouriching Golden Age by concentrating structures around their House of Wisdom, allowing them to unlock significant economic advantages. The House of Wisdom also drives progress throught the Ages and grants access to advanced technology. Abbasid camel units are expert at countering enemy cavalry.",
@@ -342,9 +343,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "double-broadax",
-                                "name": "Double Broadax",
-                                "icon": "double-broadax.png",
+                                "id": "double-broadaxe",
+                                "name": "Double Broadaxe",
+                                "icon": "double-broadaxe.png",
                                 "type": "technology"
                             }
                         ]
@@ -1548,6 +1549,7 @@
     },
     "english": {
         "civId": 3,
+        "codeName": "EN",
         "civName": "english",
         "shortDesc": "DEFENSE, LONGBOWS, ECONOMY",
         "longDesc": "Exceptional early infantry provide the English with a powerful punch backed up by reliable Food production from the fields.",
@@ -1905,9 +1907,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "double-broadax",
+                                "id": "double-broadaxe",
                                 "name": "Double Broadax",
-                                "icon": "double-broadax.png",
+                                "icon": "double-broadaxe.png",
                                 "type": "technology",
                                 "details": {}
                             }
@@ -3187,6 +3189,7 @@
     "chinese": {
         "civId": 1,
         "civName": "chinese",
+        "codeName": "CH",
         "shortDesc": "DYNASTIES, GUNPOWDER, EXPANSION",
         "longDesc": "The Chinese can shift their focus across the ages, deploying many unique units and building rapidly. Enemies must continually adapt if they want to keep up.",
         "image": "flag_chinese.png",
@@ -3557,9 +3560,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "double-broadax",
+                                "id": "double-broadaxe",
                                 "name": "Double Broadax",
-                                "icon": "double-broadax.png",
+                                "icon": "double-broadaxe.png",
                                 "type": "technology"
                             }
                         ]
@@ -4789,6 +4792,7 @@
     },
     "hre": {
         "civId": 5,
+        "codeName": "HR",
         "civName": "Holy Roman Empire",
         "shortDesc": "INFANTRY, RELIGION, DEFENSE",
         "longDesc": "Prelates enhance the economy of the Holy Roman Empire, while powerful infantry units form the core of its military. Enemies must face an opponent able to rapidly recover from attacks and field strong counterattacks",
@@ -5142,9 +5146,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "double-broadax",
+                                "id": "double-broadaxe",
                                 "name": "Double Broadax",
-                                "icon": "double-broadax.png",
+                                "icon": "double-broadaxe.png",
                                 "type": "technology"
                             }
                         ]

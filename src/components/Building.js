@@ -21,12 +21,11 @@ const Building = ({ building, age, columnsWidth }) => {
       {showBuilding ? (
         <Item
           image={`../building.png`}
+          itemId={building.id}
           name={building.name}
           type={"building"}
           placeholder={"x3"}
           widthBuilding={width}
-          placeholderSize={columnsWidth[building.id]}
-          size={showBuilding && numItems > 3 ? "small" : "normal"}
         />
       ) : (
         ""
@@ -37,9 +36,9 @@ const Building = ({ building, age, columnsWidth }) => {
           <Item
             key={item.id}
             image={`../${item.type}.png`}
+            itemId={item.id}
             name={item.name}
             type={item.type}
-            placeholder={"x1"} // TODO: delete this logic
             size={showBuilding && numItems > 3 ? "small" : "normal"}
           />
         );

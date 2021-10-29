@@ -1,0 +1,4 @@
+export const ITEMDETAIL_OPEN = "ITEMDETAIL_OPEN";
+export const ITEMDETAIL_CLOSE = "ITEMDETAIL_CLOSE";
+export const UPDATE_ITEM = "UPDATE_ITEM";
+export const CIV_UPDATE = "CIV_UPDATE";

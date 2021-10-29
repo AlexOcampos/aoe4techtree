@@ -2,30 +2,43 @@
     "civilizations": [
         {
             "id": 2,
+            "codeName": "AB",
             "name": "Abbasid Dinasty",
             "image": "./flag_abbasid.png",
             "civInfo": "abbasid"
         },
         {
             "id": 1,
+            "codeName": "CH",
             "name": "Chinese",
             "image": "./flag_chinese.png",
             "civInfo": "chinese"
         },
         {
             "id": 5,
+            "codeName": "HR",
             "name": "Holy Roman Empire",
             "image": "./flag_hre.png",
             "civInfo": "hre"
         },
         {
             "id": 3,
+            "codeName": "EN",
             "name": "English",
             "image": "./flag_english.png",
             "civInfo": "english"
         },
         {
+            "id": 8,
+            "name": "Delhi Sultanate",
+            "codeName": "DE",
+            "image": "./flag_sultanates.png",
+            "civInfo": "delhi",
+            "comingSoon": true
+        },
+        {
             "id": 4,
+            "codeName": "FR",
             "name": "French",
             "image": "./flag_french.png",
             "civInfo": "french",
@@ -33,6 +46,7 @@
         },
         {
             "id": 6,
+            "codeName": "MO",
             "name": "Mongol",
             "image": "./flag_mongol.png",
             "civInfo": "mongol",
@@ -40,16 +54,10 @@
         },
         {
             "id": 7,
+            "codeName": "RU",
             "name": "Rus",
             "image": "./flag_rus.png",
             "civInfo": "rus",
-            "comingSoon": true
-        },
-        {
-            "id": 8,
-            "name": "Delhi Sultanate",
-            "image": "./flag_sultanates.png",
-            "civInfo": "delhi",
             "comingSoon": true
         }
     ]
