@@ -42,6 +42,7 @@ const ItemContainer = styled.div`
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
+  cursor: pointer;
 
   img {
     width: 60px;
