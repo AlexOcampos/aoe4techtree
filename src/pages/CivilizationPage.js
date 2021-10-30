@@ -3,7 +3,14 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { CivInfo, CivTree } from "../components";
 import { civilizations } from "../data/civs.json";
-import { abbasid, chinese, hre, english, delhi } from "../data/civsInfo.json";
+import {
+  abbasid,
+  chinese,
+  hre,
+  english,
+  delhi,
+  french,
+} from "../data/civsInfo.json";
 import { useItemDetailContext } from "../context/itemdetail_context";
 
 const CivilizationPage = () => {
@@ -26,6 +33,8 @@ const CivilizationPage = () => {
         setCivTree(abbasid);
       } else if (civInfo === "delhi") {
         setCivTree(delhi);
+      } else if (civInfo === "french") {
+        setCivTree(french);
       }
     }
   }, []);

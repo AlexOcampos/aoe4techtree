@@ -8106,5 +8106,1642 @@
                 ]
             }
         ]
+    },
+    "french": {
+        "civId": 5,
+        "codeName": "FR",
+        "civName": "French",
+        "shortDesc": "AGGRESSION, CAVALRY, ECONOMY",
+        "longDesc": "The French deploy powerful cavalry units and can boost production in fortified positions. Enemies must be prepared to withstand the charges of powerful Royal Knights and other armored units.",
+        "image": "flag_french.png",
+        "infoAndBonus": [
+            {
+                "title": "Mounted Combat",
+                "description": "Battle with improved cavalry units wielding more powerful weaponry and technologies."
+            },
+            {
+                "title": "Mainland Economy",
+                "description": "Wield a superior economy with cheaper resource drop-offs, economic technologies, and more versatile Traders."
+            },
+            {
+                "title": "Productive Front",
+                "description": "Maintain offensives with Keeps that reduce the cost of units produced from Archery Ranges and Stables within their influence."
+            },
+            {
+                "title": "Civilization Bonuses",
+                "list": [
+                    "Faster Villager and Scout production per Age (10%, 15%, 20%, 20%).",
+                    "Economic technology 30% cheaper.",
+                    "Resource drop-off buildings 25 Wood cheaper.",
+                    "Trade Posts are revealed on the minimap at the start of the game.",
+                    "Traders can return any resource to the market.",
+                    "Melee damage techs are researched for free.",
+                    "Trade Ships return 20% more gold."
+                ]
+            },
+            {
+                "title": "Influence",
+                "description": "Units produced from an Archery Range or Stable within the influence of a Keep are 20% cheaper."
+            },
+            {
+                "title": "Unique Units",
+                "list": [
+                    "Royal Knight: Gains bonus damage for 3 seconds after completing a charge.",
+                    "Arbalétrier: Deploy a defensive pasive that provides 5 ranged armor for 30 seconds.",
+                    "Galleass: Large war galley that has a long range forward mounted bombard."
+                ]
+            }
+        ],
+        "tree": [
+            {
+                "id": 1,
+                "name": "Dark Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "villager",
+                                "name": "villager",
+                                "icon": "villager.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "scout",
+                                "name": "scout",
+                                "icon": "scout.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "house",
+                        "name": "house",
+                        "icon": "house.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "mill",
+                        "name": "mill",
+                        "icon": "mill.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "survival-techniques",
+                                "name": "survival techniques",
+                                "icon": "survival-techniques.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wheelbarrow",
+                                "name": "wheelbarrow",
+                                "icon": "wheelbarrow.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "lumber-camp",
+                        "name": "Lumber Camp",
+                        "icon": "lumber-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "forestry",
+                                "name": "Forestry",
+                                "icon": "forestry.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mining-camp",
+                        "name": "mining Camp",
+                        "icon": "mining-camp.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "farm",
+                        "name": "farm",
+                        "icon": "farm.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "spearman",
+                                "name": "spearman",
+                                "icon": "spearman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "fishing-boat",
+                                "name": "Fishing Boat",
+                                "icon": "fishing-boat.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "transport-ship",
+                                "name": "Transport Ship",
+                                "icon": "transport-ship.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "palisade-wall",
+                        "name": "Palisade Wall",
+                        "icon": "palisade-wall.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "palisade-gate",
+                        "name": "Palisade Gate",
+                        "icon": "palisade-gate.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "chamber-of-commerce",
+                        "name": "Chamber of Commerce",
+                        "icon": "chamber-of-commerce.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "school-of-cavalry",
+                        "name": "School of Cavalry",
+                        "icon": "school-of-cavalry.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "market",
+                        "name": "Market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall",
+                        "name": "stone wall",
+                        "icon": "stone-wall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-gate",
+                        "name": "stone wall gate",
+                        "icon": "stone-wall-gate.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-tower",
+                        "name": "stone wall tower",
+                        "icon": "stone-wall-tower.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "royal-institute",
+                        "name": "Royal Institute",
+                        "icon": "royal-institute.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "guild-hall",
+                        "name": "Guild Hall",
+                        "icon": "guild-hall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "keep",
+                        "name": "keep",
+                        "icon": "keep.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "monastery",
+                        "name": "monastery",
+                        "icon": "monastery.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "red-palace",
+                        "name": "red palace",
+                        "icon": "red-palace",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "college-of-artillery",
+                        "name": "college of artillery",
+                        "icon": "college-of-artillery.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "university",
+                        "name": "university",
+                        "icon": "university.png",
+                        "availableAge": 4,
+                        "items": []
+                    },
+                    {
+                        "id": "notre-dame",
+                        "name": "Notre Dame",
+                        "icon": "notre-dame.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Feudal Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "items": [
+                            {
+                                "id": "textiles",
+                                "name": "textiles",
+                                "icon": "textiles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "house",
+                        "name": "house",
+                        "icon": "house.png",
+                        "items": []
+                    },
+                    {
+                        "id": "mill",
+                        "name": "mill",
+                        "icon": "mill.png",
+                        "items": [
+                            {
+                                "id": "professional-scouts",
+                                "name": "professional scouts",
+                                "icon": "professional-scouts.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "horticulture",
+                                "name": "horticulture",
+                                "icon": "horticulture.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "lumber-camp",
+                        "name": "Lumber Camp",
+                        "icon": "lumber-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "double-broadaxe",
+                                "name": "Double Broadax",
+                                "icon": "double-broadaxe.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mining-camp",
+                        "name": "mining Camp",
+                        "icon": "mining-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "specialized-pick",
+                                "name": "Specialized Pick",
+                                "icon": "specialized-pick.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "farm",
+                        "name": "farm",
+                        "icon": "farm.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "hardened-spearman",
+                                "name": "Hardened Spearman",
+                                "icon": "hardened-spearman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "trade-ship",
+                                "name": "Trade Ship",
+                                "icon": "trade-ship.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "hulk",
+                                "name": "hulk",
+                                "icon": "hulk.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "extended-lines",
+                                "name": "Extended Lines",
+                                "icon": "extended-lines.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "additional-sails",
+                                "name": "Aditional Sails",
+                                "icon": "additional-sails.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "palisade-wall",
+                        "name": "Palisade Wall",
+                        "icon": "palisade-wall.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "palisade-gate",
+                        "name": "Palisade Gate",
+                        "icon": "palisade-gate.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "arrow-slit",
+                                "name": "arrow slit",
+                                "icon": "arrow-slit.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "fortify-outpost",
+                                "name": "Fortify Outpost",
+                                "icon": "fortify-outpost.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "chamber-of-commerce",
+                        "name": "chamber of commerce",
+                        "icon": "chamber-of-commerce.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "school-of-cavalry",
+                        "name": "school of cavalry",
+                        "icon": "school-of-cavalry.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "scout",
+                                "name": "scout",
+                                "icon": "scout.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "horseman",
+                                "name": "horseman",
+                                "icon": "horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "royal-knight",
+                                "name": "Royal Knight",
+                                "icon": "royal-knight.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "chivalry",
+                                "name": "chivalry",
+                                "icon": "chivalry.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "market",
+                        "name": "Market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "trader",
+                                "name": "Trader",
+                                "icon": "trader.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "bloomery",
+                                "name": "Bloomery",
+                                "icon": "bloomery.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "steeled-arrow",
+                                "name": "Steeled arrow",
+                                "icon": "steeled-arrow.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "fitted-leatherwork",
+                                "name": "Fitted Leatherwork",
+                                "icon": "fitted-leatherwork.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "iron-undermesh",
+                                "name": "Iron Undermesh",
+                                "icon": "iron-undermesh.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "siege-engineering",
+                                "name": "Siege Engineering",
+                                "icon": "siege-engineering.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "archer",
+                                "name": "archer",
+                                "icon": "archer.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "scout",
+                                "name": "scout",
+                                "icon": "scout.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "horseman",
+                                "name": "horseman",
+                                "icon": "horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "royal-knight",
+                                "name": "Royal Knight",
+                                "icon": "royal-knight.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "chivalry",
+                                "name": "chivalry",
+                                "icon": "chivalry.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stone-wall",
+                        "name": "stone wall",
+                        "icon": "stone-wall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-gate",
+                        "name": "stone wall gate",
+                        "icon": "stone-wall-gate.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-tower",
+                        "name": "stone wall tower",
+                        "icon": "stone-wall-tower.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "royal-institute",
+                        "name": "royal institute",
+                        "icon": "royal-institute.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "guild-hall",
+                        "name": "guild hall",
+                        "icon": "guild-hall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "keep",
+                        "name": "keep",
+                        "icon": "keep.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "monastery",
+                        "name": "monastery",
+                        "icon": "monastery.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "red-palace",
+                        "name": "red palace",
+                        "icon": "red-palace.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "college-of-artillery",
+                        "name": "college of artillery",
+                        "icon": "college-of-artillery.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "university",
+                        "name": "university",
+                        "icon": "university.png",
+                        "availableAge": 4,
+                        "items": []
+                    },
+                    {
+                        "id": "notre-dame",
+                        "name": "notre dame",
+                        "icon": "notre-dame.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Castle Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "items": []
+                    },
+                    {
+                        "id": "house",
+                        "name": "house",
+                        "icon": "house.png",
+                        "items": []
+                    },
+                    {
+                        "id": "mill",
+                        "name": "mill",
+                        "icon": "mill.png",
+                        "items": [
+                            {
+                                "id": "fertilization",
+                                "name": "fertilization",
+                                "icon": "fertilization.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "lumber-camp",
+                        "name": "Lumber Camp",
+                        "icon": "lumber-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "lumber-preservation",
+                                "name": "Lumber Preservation",
+                                "icon": "lumber-preservation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mining-camp",
+                        "name": "mining Camp",
+                        "icon": "mining-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "acid-distilation",
+                                "name": "Acid Distillation",
+                                "icon": "acid-distilation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "farm",
+                        "name": "farm",
+                        "icon": "farm.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "veteran-spearman",
+                                "name": "Veteran Spearman",
+                                "icon": "veteran-spearman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "man-at-arms",
+                                "name": "Man-at-Arms",
+                                "icon": "man-at-arms.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "galleass",
+                                "name": "galleass",
+                                "icon": "galleass.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "demolition-ship",
+                                "name": "demolition ship",
+                                "icon": "demolition-ship.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "drift-nets",
+                                "name": "Drift Nets",
+                                "icon": "drift-nets.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "long-guns",
+                                "name": "long guns",
+                                "icon": "long-guns.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "navigator-lookout",
+                                "name": "navigator lookout",
+                                "icon": "navigator-lookout.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "armored-hull",
+                                "name": "armored hull",
+                                "icon": "armored-hull.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "extra-ballista",
+                                "name": "Extra Balista",
+                                "icon": "extra-ballista.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "palisade-wall",
+                        "name": "Palisade Wall",
+                        "icon": "palisade-wall.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "palisade-gate",
+                        "name": "Palisade Gate",
+                        "icon": "palisade-gate.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "springland",
+                                "name": "Springald",
+                                "icon": "springland-emplacement.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "chamber-of-commerce",
+                        "name": "chamber of commerce",
+                        "icon": "chamber-of-commerce.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "school-of-cavalry",
+                        "name": "school of cavalry",
+                        "icon": "school-of-cavalry.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "veteran-horseman",
+                                "name": "veteran horseman",
+                                "icon": "veteran-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "veteran-royal-knight",
+                                "name": "veteran royal knight",
+                                "icon": "veteran-royal-knight.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "cantled-saddles",
+                                "name": "cantled saddles",
+                                "icon": "cantled-saddles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "market",
+                        "name": "Market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "decarbonization",
+                                "name": "decarbonization",
+                                "icon": "decarbonization.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "balanced-projectiles",
+                                "name": "balanced projectiles",
+                                "icon": "balanced-projectiles.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "insulated-helm",
+                                "name": "Insulated helm",
+                                "icon": "insulated-helm.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wedge-rivets",
+                                "name": "Wedge Rivets",
+                                "icon": "wedge-rivets.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "military-academy",
+                                "name": "Military academy",
+                                "icon": "military-academy.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "veteran-archer",
+                                "name": "veteran archer",
+                                "icon": "veteran-archer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "arbalétrier",
+                                "name": "arbalétrier",
+                                "icon": "arbalétrier.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "gambesons",
+                                "name": "gambesons",
+                                "icon": "gambesons.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "veteran-horseman",
+                                "name": "veteran horseman",
+                                "icon": "veteran-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "veteran-royal-knight",
+                                "name": "veteran royal knight",
+                                "icon": "veteran-royal-knight.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "cantled-saddles",
+                                "name": "cantled saddles",
+                                "icon": "cantled-saddles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stone-wall",
+                        "name": "stone wall",
+                        "icon": "stone-wall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-gate",
+                        "name": "stone wall gate",
+                        "icon": "stone-wall-gate.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-tower",
+                        "name": "stone wall tower",
+                        "icon": "stone-wall-tower.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "royal-institute",
+                        "name": "royal institute",
+                        "icon": "royal-institute.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "enlistment-incentives",
+                                "name": "enlistment incentives",
+                                "icon": "enlistment-incentives.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "royal-bloodlines",
+                                "name": "royal bloodlines",
+                                "icon": "royal-bloodlines.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "cantled-saddles",
+                                "name": "cantled saddles",
+                                "icon": "cantled-saddles.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "chivalry",
+                                "name": "chivalry",
+                                "icon": "chivalry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "gambesons",
+                                "name": "gambesons",
+                                "icon": "gambesons.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "crossbow-stirrups",
+                                "name": "crossbow stirrups",
+                                "icon": "crossbow-stirrups.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "guild-hall",
+                        "name": "guild hall",
+                        "icon": "guild-hall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "keep",
+                        "name": "keep",
+                        "icon": "keep.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "springald",
+                                "name": "springald",
+                                "icon": "springald.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "boiling-oil",
+                                "name": "boiling oil",
+                                "icon": "boiling-oil.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "monastery",
+                        "name": "monastery",
+                        "icon": "monastery.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "monk",
+                                "name": "monk",
+                                "icon": "monk.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "herbal-medicine",
+                                "name": "herbal medicine",
+                                "icon": "herbal-medicine.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "springald",
+                                "name": "springald",
+                                "icon": "springald.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "mangonel",
+                                "name": "mangonel",
+                                "icon": "mangonel.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "counterweight-trebuchet",
+                                "name": "counterweight trebuchet",
+                                "icon": "counterweight-trebuchet.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "greased-axles",
+                                "name": "greased axles",
+                                "icon": "greased-axles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "red-palace",
+                        "name": "red palace",
+                        "icon": "red-palace.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "springald",
+                                "name": "springald",
+                                "icon": "springald.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "boiling-oil",
+                                "name": "boiling oil",
+                                "icon": "boiling-oil.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "college-of-artillery",
+                        "name": "college of artillery",
+                        "icon": "college-of-artillery.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "royal-cannon",
+                                "name": "royal-cannon",
+                                "icon": "royal-cannon.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "royal-ribauldequin",
+                                "name": "royal ribauldequin",
+                                "icon": "royal-ribauldequin.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "royal-culverin",
+                                "name": "royal culverin",
+                                "icon": "royal-culverin.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "university",
+                        "name": "university",
+                        "icon": "university.png",
+                        "availableAge": 4,
+                        "items": []
+                    },
+                    {
+                        "id": "notre-dame",
+                        "name": "notre dame",
+                        "icon": "notre-dame.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Imperial Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "items": []
+                    },
+                    {
+                        "id": "house",
+                        "name": "house",
+                        "icon": "house.png",
+                        "items": []
+                    },
+                    {
+                        "id": "mill",
+                        "name": "mill",
+                        "icon": "mill.png",
+                        "items": [
+                            {
+                                "id": "precision-cross-breeding",
+                                "name": "precision cross-breeding",
+                                "icon": "precision-cross-breeding.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "lumber-camp",
+                        "name": "Lumber Camp",
+                        "icon": "lumber-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "crosscut-saw",
+                                "name": "Crosscut Saw",
+                                "icon": "crosscut-saw.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mining-camp",
+                        "name": "mining Camp",
+                        "icon": "mining-camp.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "cupellation",
+                                "name": "Cupellation",
+                                "icon": "cupellation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "farm",
+                        "name": "farm",
+                        "icon": "farm.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "elite-spearman",
+                                "name": "Elite Spearman",
+                                "icon": "elite-spearman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-man-at-arms",
+                                "name": "elite Man-at-Arms",
+                                "icon": "elite-man-at-arms.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "carrack",
+                                "name": "carrack",
+                                "icon": "carrack.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "chaser-cannons",
+                                "name": "Chaser Cannons",
+                                "icon": "chaser-cannons.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "explosives",
+                                "name": "Explosives",
+                                "icon": "explosives.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "palisade-wall",
+                        "name": "Palisade Wall",
+                        "icon": "palisade-wall.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "palisade-gate",
+                        "name": "Palisade Gate",
+                        "icon": "palisade-gate.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "cannon",
+                                "name": "Cannon Emplacement",
+                                "icon": "cannon.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "chamber-of-commerce",
+                        "name": "chamber of commerce",
+                        "icon": "chamber-of-commerce.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "school-of-cavalry",
+                        "name": "school of cavalry",
+                        "icon": "school-of-cavalry.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "elite-horseman",
+                                "name": "elite horseman",
+                                "icon": "elite-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-royal-knight",
+                                "name": "elite royal knight",
+                                "icon": "elite-royal-knight.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "market",
+                        "name": "Market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "damascus-steel",
+                                "name": "damascus steel",
+                                "icon": "damascus-steel.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "platecutter-point",
+                                "name": "platecutter point",
+                                "icon": "platecutter-point.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "master-smiths",
+                                "name": "Master Smiths",
+                                "icon": "master-smiths.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "angled-surfaces",
+                                "name": "Wedge Rivets",
+                                "icon": "angled-surfaces.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "elite-archer",
+                                "name": "elite archer",
+                                "icon": "elite-archer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-arbalétrier",
+                                "name": "elite arbalétrier",
+                                "icon": "elite-arbalétrier.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "handcannoneer",
+                                "name": "handcannoneer",
+                                "icon": "handcannoneer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "crossbow-stirrups",
+                                "name": "crossbow-stirrups",
+                                "icon": "crossbow-stirrups.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "elite-horseman",
+                                "name": "elite horseman",
+                                "icon": "elite-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-royal-knight",
+                                "name": "elite royal knight",
+                                "icon": "elite-royal-knight.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stone-wall",
+                        "name": "stone wall",
+                        "icon": "stone-wall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-gate",
+                        "name": "stone wall gate",
+                        "icon": "stone-wall-gate.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "stone-wall-tower",
+                        "name": "stone wall tower",
+                        "icon": "stone-wall-tower.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "royal-institute",
+                        "name": "royal institute",
+                        "icon": "royal-institute.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "guild-hall",
+                        "name": "guild hall",
+                        "icon": "guild-hall.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "keep",
+                        "name": "keep",
+                        "icon": "keep.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "cannon",
+                                "name": "cannon emplacement",
+                                "icon": "cannon.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "enlistment-incentives",
+                                "name": "enlistment incentives",
+                                "icon": "enlistment-incentives.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "monastery",
+                        "name": "monastery",
+                        "icon": "monastery.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "piety",
+                                "name": "piety",
+                                "icon": "piety.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "tithe-barns",
+                                "name": "tithe barns",
+                                "icon": "tithe-barns.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "cannon",
+                                "name": "cannon",
+                                "icon": "cannon.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "ribauldequin",
+                                "name": "ribauldequin",
+                                "icon": "ribauldequin.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "roller-shutter-triggers",
+                                "name": "roller shutter triggers",
+                                "icon": "roller-shutter-triggers.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "adjustable-crossbars",
+                                "name": "adjustable-crossbars",
+                                "icon": "adjustable-crossbars.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "siege-works",
+                                "name": "siege works",
+                                "icon": "siege-works.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "red-palace",
+                        "name": "red palace",
+                        "icon": "red-palace.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "cannon",
+                                "name": "cannon emplacement",
+                                "icon": "cannon.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "enlistment-incentives",
+                                "name": "enlistment incentives",
+                                "icon": "enlistment-incentives.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "college-of-artillery",
+                        "name": "college of artillery",
+                        "icon": "college-of-artillery.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "university",
+                        "name": "university",
+                        "icon": "university.png",
+                        "availableAge": 4,
+                        "items": [
+                            {
+                                "id": "chemistry",
+                                "name": "chemistry",
+                                "icon": "chemistry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "geometry",
+                                "name": "geometry",
+                                "icon": "geometry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "royal-bloodlines",
+                                "name": "royal-bloodlines",
+                                "icon": "royal-bloodlines.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "incendiary-arrows",
+                                "name": "incendiary arrows",
+                                "icon": "incendiary-arrows.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "court-architects",
+                                "name": "court architects",
+                                "icon": "court-architects.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "elite-army-tactics",
+                                "name": "elite army tactics",
+                                "icon": "elite-army-tactics.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "notre-dame",
+                        "name": "notre dame",
+                        "icon": "notre-dame.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            }
+        ]
     }
 }
