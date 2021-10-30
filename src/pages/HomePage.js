@@ -8,8 +8,11 @@ const ErrorPage = () => {
   return (
     <Wrapper>
       <div className="notification">
-        <b>Coming soon:</b> All civs, detail info for each unit/building/tech,
-        and more...
+        <span>
+          <b>Coming soon:</b> All civs, detail info for each unit/building/tech,
+          and more...
+        </span>
+        <span>Last update: 2021/10/30 00:08</span>
       </div>
       <div className="civs">
         {civilizations.map((civ) => {
@@ -59,7 +62,9 @@ const Wrapper = styled.main`
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: rgba(208, 159, 30, 1);
+    background-color: var(--clr-primary-2);
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .civs {
@@ -101,7 +106,7 @@ const Wrapper = styled.main`
       width: 100%;
       opacity: 0;
       transition: 0.5s ease;
-      background-color: rgba(208, 159, 30, 0.6);
+      background-color: var(--clr-primary-2);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -122,7 +127,7 @@ const Wrapper = styled.main`
     justify-content: center;
 
     h3:hover {
-      color: rgba(208, 159, 30, 1);
+      color: var(--clr-primary-1);
     }
   }
 

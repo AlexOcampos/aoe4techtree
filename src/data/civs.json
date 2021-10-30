@@ -33,8 +33,7 @@
             "name": "Delhi Sultanate",
             "codeName": "DE",
             "image": "./flag_sultanates.png",
-            "civInfo": "delhi",
-            "comingSoon": true
+            "civInfo": "delhi"
         },
         {
             "id": 4,

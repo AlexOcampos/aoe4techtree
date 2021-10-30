@@ -11,7 +11,6 @@ const initialState = {
   isItemDetailOpen: false,
   civCode: "",
   itemId: "",
-  itemName: "",
   detail: {},
 };
 

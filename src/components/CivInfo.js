@@ -58,9 +58,9 @@ const CivInfoContainer = styled.div`
   height: 100vh;
   padding: 0.6rem;
   width: 30rem;
-  border: 3px solid #5d5127;
+  border: 3px solid var(--clr-primary-1);
   box-sizing: border-box;
-  background: rgb(38, 50, 67);
+  background: var(--clr-primary-background);
   background: linear-gradient(
     90deg,
     rgba(38, 50, 67, 1) 0%,
@@ -81,7 +81,7 @@ const CivInfoContainer = styled.div`
 
   nav > *:hover {
     text-decoration: none;
-    color: rgba(208, 159, 30, 1);
+    color: var(--clr-primary-1);
   }
 
   .bg {
@@ -113,11 +113,7 @@ const CivInfoContainer = styled.div`
   h2,
   h3 {
     font-weight: normal;
-    background: linear-gradient(
-      0deg,
-      rgba(153, 154, 126, 1) 0%,
-      rgba(209, 175, 101, 1) 100%
-    );
+    background: var(--clr-primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

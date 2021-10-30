@@ -40,8 +40,7 @@ const calculateColumnsWidth = (tree) => {
 };
 
 const CivTree = ({ civTree }) => {
-  const { isItemDetailOpen, closeItemDetail, itemName, detail } =
-    useItemDetailContext();
+  const { isItemDetailOpen, closeItemDetail, detail } = useItemDetailContext();
   let columnsWidth = calculateColumnsWidth(civTree);
 
   return (
@@ -125,7 +124,10 @@ const CivTree = ({ civTree }) => {
       <BottomSheet
         open={isItemDetailOpen}
         header={
-          <h1 className="popup-black" style={{ color: "black" }}>
+          <h1
+            className="popup-black"
+            style={{ color: "black", textTransform: "capitalize" }}
+          >
             {detail ? detail.customName : "<NO DATA>"}
           </h1>
         }
@@ -196,22 +198,14 @@ const CivTreeContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-      270deg,
-      #535443 0%,
-      rgba(209, 175, 101, 0.2) 100%
-    );
-    border: 3px solid #5d5127;
+    background: var(--clr-primary-background-gradient);
+    border: 3px solid var(--clr-primary-1);
     box-sizing: border-box;
     text-align: center;
     h1 {
       font-size: 2.5rem;
       width: 3rem;
-      background: linear-gradient(
-        0deg,
-        rgba(153, 154, 126, 1) 0%,
-        rgba(209, 175, 101, 1) 100%
-      );
+      background: var(--clr-primary-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
