@@ -9743,5 +9743,1404 @@
                 ]
             }
         ]
+    },
+    "mongol": {
+        "civId": 6,
+        "codeName": "MO",
+        "civName": "Mongol",
+        "shortDesc": "AGGRESSION, NOMADIC, MOBILITY",
+        "longDesc": "Masters of mobility and mounted warfare, the Mongols can easily relocate their camps. They gain economic benefits from setting up near Stone Outcroppings and from raiding enemy buildings. Enemies must deal with cavalry attacks from the opening moments of play.",
+        "image": "flag_mongol.png",
+        "infoAndBonus": [
+            {
+                "title": "Great Dominion",
+                "description": "Forgot the need to build Houses and begin with maximum Population. Traders provide bonus resources when produced in large numbers."
+            },
+            {
+                "title": "Sacred Ovoos",
+                "description": "Extract valuable Stone using the Ovoo. Villagers cannot gather Stone, nor can it be gained through the Market or tribute. The Ovoo provides improved unit production and research to buildings within its influence area."
+            },
+            {
+                "title": "Khanate",
+                "description": "Field a singular mighty Khan to provide powerful bonuses to all nearby military units with Signal Arrows. Early cavalry are excellent raiders and all units gain bonus resources by igniting enemy buildings."
+            },
+            {
+                "title": "Civilization Bonuses",
+                "list": [
+                    "Plunder +50 Food and Gold by igniting enemy buildings.",
+                    "All buildings can be packed up and redeployed to a new location.",
+                    "Start with maximum population limit and no need for Houses.",
+                    "Early Horsemen in the Dark Age (I) and Early Lancers in the Feudal Age (II).",
+                    "Double produce units or research advanced versions of technologies using Stone.",
+                    "Gain +10% Food, Wood, Gold, and Stone from trade routes with more Traders.",
+                    "Transport ships have +50% health and move +15% faster."
+                ]
+            },
+            {
+                "title": "Influence",
+                "description": "Buildings constructed within the influence of an Ovoo are able to double produce units or research improved versions of tech."
+            },
+            {
+                "title": "Unique Units",
+                "list": [
+                    "Khan: Fires powerful signal arrows that enhance nearby troops.",
+                    "Mangudai: Mounted archer able to fire while moving."
+                ]
+            }
+        ],
+        "tree": [
+            {
+                "id": 1,
+                "name": "Dark Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "villager",
+                                "name": "villager",
+                                "icon": "villager.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "scout",
+                                "name": "scout",
+                                "icon": "scout.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ger",
+                        "name": "ger",
+                        "icon": "ger.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "forestry",
+                                "name": "Forestry",
+                                "icon": "forestry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "survival-techniques",
+                                "name": "survival techniques",
+                                "icon": "survival-techniques.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wheelbarrow",
+                                "name": "wheelbarrow",
+                                "icon": "wheelbarrow.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ovoo",
+                        "name": "ovoo",
+                        "icon": "ovoo.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "superior-mobility",
+                                "name": "superior-mobility",
+                                "icon": "superior-mobility.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "spearman",
+                                "name": "spearman",
+                                "icon": "spearman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "scout",
+                                "name": "scout",
+                                "icon": "scout.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "early-horseman",
+                                "name": "early-horseman",
+                                "icon": "early-horseman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "fishing-boat",
+                                "name": "Fishing Boat",
+                                "icon": "fishing-boat.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "transport-ship",
+                                "name": "Transport Ship",
+                                "icon": "transport-ship.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "deer-stones",
+                        "name": "deer stones",
+                        "icon": "deer-stones.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "the-silver-tree",
+                        "name": "the silver tree",
+                        "icon": "the-silver-tree.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "pasture",
+                        "name": "pasture",
+                        "icon": "pasture.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "herdable-sheep",
+                                "name": "herdable sheep",
+                                "icon": "herdable-sheep.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "market",
+                        "name": "market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "kurultai",
+                        "name": "kurultai",
+                        "icon": "kurultai.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "steppe-redoubt",
+                        "name": "steppe redoubt",
+                        "icon": "steppe-redoubt.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "forestry",
+                                "name": "forestry",
+                                "icon": "forestry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wheelbarrow",
+                                "name": "wheelbarrow",
+                                "icon": "wheelbarrow.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "survival-techniques",
+                                "name": "survival techniques",
+                                "icon": "survival-techniques.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "prayer-tent",
+                        "name": "prayer tent",
+                        "icon": "prayer-tent.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "the-white-stupa",
+                        "name": "the white stupa",
+                        "icon": "the-white-stupa.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "khaganate-palace",
+                        "name": "khaganate palace",
+                        "icon": "khaganate-palace.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "monument-of-the-great-khan",
+                        "name": "monument of the great khan",
+                        "icon": "monument-of-the-great-khan.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Feudal Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "textiles",
+                                "name": "textiles",
+                                "icon": "textiles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ger",
+                        "name": "ger",
+                        "icon": "ger.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "professional-scouts",
+                                "name": "professional scouts",
+                                "icon": "professional-scouts.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "horticulture",
+                                "name": "horticulture",
+                                "icon": "horticulture.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "double-broadaxe",
+                                "name": "Double Broadax",
+                                "icon": "double-broadaxe.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "specialized-pick",
+                                "name": "Specialized Pick",
+                                "icon": "specialized-pick.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ovoo",
+                        "name": "ovoo",
+                        "icon": "ovoo.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "whistling-arrows",
+                                "name": "whistling arrows",
+                                "icon": "whistling-arrows.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "raid-bounty",
+                                "name": "raid bounty",
+                                "icon": "raid-bounty.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "hardened-spearman",
+                                "name": "Hardened Spearman",
+                                "icon": "hardened-spearman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "horseman",
+                                "name": "horseman",
+                                "icon": "horseman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "trade-ship",
+                                "name": "Trade Ship",
+                                "icon": "trade-ship.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "light-junk",
+                                "name": "light junk",
+                                "icon": "light-junk.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "extended-lines",
+                                "name": "Extended Lines",
+                                "icon": "extended-lines.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "piracy",
+                                "name": "piracy",
+                                "icon": "piracy.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "additional-sails",
+                                "name": "Aditional Sails",
+                                "icon": "additional-sails.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "arrow-slit",
+                                "name": "arrow slit",
+                                "icon": "arrow-slit.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "deer-stones",
+                        "name": "deer stones",
+                        "icon": "deer-stones.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "the-silver-tree",
+                        "name": "the silver tree",
+                        "icon": "the-silver-tree.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "trader",
+                                "name": "trader",
+                                "icon": "trader.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "pasture",
+                        "name": "pasture",
+                        "icon": "pasture.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "market",
+                        "name": "market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "trader",
+                                "name": "trader",
+                                "icon": "trader.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "bloomery",
+                                "name": "Bloomery",
+                                "icon": "bloomery.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "steeled-arrow",
+                                "name": "Steeled arrow",
+                                "icon": "steeled-arrow.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "fitted-leatherwork",
+                                "name": "Fitted Leatherwork",
+                                "icon": "fitted-leatherwork.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "iron-undermesh",
+                                "name": "Iron Undermesh",
+                                "icon": "iron-undermesh.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "siege-engineering",
+                                "name": "Siege Engineering",
+                                "icon": "siege-engineering.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "archer",
+                                "name": "archer",
+                                "icon": "archer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "mangudai",
+                                "name": "mangudai",
+                                "icon": "mangudai.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "kurultai",
+                        "name": "kurultai",
+                        "icon": "kurultai.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "steppe-redoubt",
+                        "name": "steppe redoubt",
+                        "icon": "steppe-redoubt.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "horticulture",
+                                "name": "horticulture",
+                                "icon": "horticulture.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "double-broadax",
+                                "name": "double broadax",
+                                "icon": "double-broadax.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "specialized-pick",
+                                "name": "specialized pick",
+                                "icon": "specialized-pick.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "professional-scouts",
+                                "name": "professional scouts",
+                                "icon": "professional-scouts.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "prayer-tent",
+                        "name": "prayer tent",
+                        "icon": "prayer-tent.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "the-white-stupa",
+                        "name": "the white stupa",
+                        "icon": "the-white-stupa.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "khaganate-palace",
+                        "name": "khaganate palace",
+                        "icon": "khaganate-palace.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "monument-of-the-great-khan",
+                        "name": "monument of the great khan",
+                        "icon": "monument-of-the-great-khan.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Castle Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "items": []
+                    },
+                    {
+                        "id": "ger",
+                        "name": "ger",
+                        "icon": "ger.png",
+                        "items": [
+                            {
+                                "id": "fertilization",
+                                "name": "fertilization",
+                                "icon": "fertilization.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "lumber-preservation",
+                                "name": "Lumber Preservation",
+                                "icon": "lumber-preservation.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "acid-distilation",
+                                "name": "Acid Distillation",
+                                "icon": "acid-distilation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ovoo",
+                        "name": "ovoo",
+                        "icon": "ovoo.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "additional-torches",
+                                "name": "additional torches",
+                                "icon": "additional-torches.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "veteran-spearman",
+                                "name": "Veteran Spearman",
+                                "icon": "veteran-spearman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "man-at-arms",
+                                "name": "Man-at-Arms",
+                                "icon": "man-at-arms.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "veteran-horseman",
+                                "name": "Veteran horseman",
+                                "icon": "veteran-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "lancer",
+                                "name": "lancer",
+                                "icon": "lancer.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "war-junk",
+                                "name": "war junk",
+                                "icon": "war-junk.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "explosive-junk",
+                                "name": "explosive junk",
+                                "icon": "explosive-junk.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "drift-nets",
+                                "name": "Drift Nets",
+                                "icon": "drift-nets.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "navigator-lookout",
+                                "name": "navigator lookout",
+                                "icon": "navigator-lookout.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "extra-ballista",
+                                "name": "Extra Balista",
+                                "icon": "extra-ballista.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "springland",
+                                "name": "Springald",
+                                "icon": "springland-emplacement.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "yam-network",
+                                "name": "yam network",
+                                "icon": "yam-network.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "deer-stones",
+                        "name": "deer stones",
+                        "icon": "deer-stones.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "the-silver-tree",
+                        "name": "the silver tree",
+                        "icon": "the-silver-tree.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "pasture",
+                        "name": "pasture",
+                        "icon": "pasture.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "market",
+                        "name": "market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "decarbonization",
+                                "name": "decarbonization",
+                                "icon": "decarbonization.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "balanced-projectiles",
+                                "name": "balanced projectiles",
+                                "icon": "balanced-projectiles.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "insulated-helm",
+                                "name": "Insulated helm",
+                                "icon": "insulated-helm.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wedge-rivets",
+                                "name": "Wedge Rivets",
+                                "icon": "wedge-rivets.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "military-academy",
+                                "name": "Military academy",
+                                "icon": "military-academy.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "veteran-archer",
+                                "name": "veteran archer",
+                                "icon": "veteran-archer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "crossbowman",
+                                "name": "crossbowman",
+                                "icon": "crossbowman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "veteran-mangudai",
+                                "name": "veteran mangudai",
+                                "icon": "veteran-mangudai.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "siha-bow-limbs",
+                                "name": "siha bow limbs",
+                                "icon": "siha-bow-limbs.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "kurultai",
+                        "name": "kurultai",
+                        "icon": "kurultai.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "steppe-redoubt",
+                        "name": "steppe redoubt",
+                        "icon": "steppe-redoubt.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "fertilization",
+                                "name": "fertilization",
+                                "icon": "fertilization.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "lumber-preservation",
+                                "name": "lumber preservation",
+                                "icon": "lumber-preservation.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "acid-distillation",
+                                "name": "acid-distillation",
+                                "icon": "acid-distillation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "prayer-tent",
+                        "name": "prayer tent",
+                        "icon": "prayer-tent.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "shaman",
+                                "name": "shaman",
+                                "icon": "shaman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "herbal-medicine",
+                                "name": "herbal medicine",
+                                "icon": "herbal-medicine.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "springald",
+                                "name": "springald",
+                                "icon": "springald.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "mangonel",
+                                "name": "mangonel",
+                                "icon": "mangonel.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "traction-trebuchet",
+                                "name": "traction trebuchet",
+                                "icon": "traction-trebuchet.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "greased-axles",
+                                "name": "greased axles",
+                                "icon": "greased-axles.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "the-white-stupa",
+                        "name": "the white stupa",
+                        "icon": "the-white-stupa.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "khaganate-palace",
+                        "name": "khaganate palace",
+                        "icon": "khaganate-palace.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "lancer",
+                                "name": "lancer",
+                                "icon": "lancer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "mangudai",
+                                "name": "mangudai",
+                                "icon": "mangudai.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "veteran-mangudai",
+                                "name": "veteran mangudai",
+                                "icon": "veteran-mangudai.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "early-horseman",
+                                "name": "early horseman",
+                                "icon": "early-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "horseman",
+                                "name": "horseman",
+                                "icon": "horseman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "monument-of-the-great-khan",
+                        "name": "monument of the great khan",
+                        "icon": "monument-of-the-great-khan.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Imperial Age",
+                "items": [
+                    {
+                        "id": "town-center",
+                        "name": "town center",
+                        "icon": "town-center.png",
+                        "items": []
+                    },
+                    {
+                        "id": "ger",
+                        "name": "ger",
+                        "icon": "ger.png",
+                        "items": [
+                            {
+                                "id": "precision-cross-breeding",
+                                "name": "precision cross-breeding",
+                                "icon": "precision-cross-breeding.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "crosscut-saw",
+                                "name": "Crosscut Saw",
+                                "icon": "crosscut-saw.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "cupellation",
+                                "name": "Cupellation",
+                                "icon": "cupellation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ovoo",
+                        "name": "ovoo",
+                        "icon": "ovoo.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "stone-bounty",
+                                "name": "stone bounty",
+                                "icon": "stone-bounty.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "barracks",
+                        "name": "barracks",
+                        "icon": "barracks.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "elite-spearman",
+                                "name": "Elite Spearman",
+                                "icon": "elite-spearman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-man-at-arms",
+                                "name": "elite Man-at-Arms",
+                                "icon": "elite-man-at-arms.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stable",
+                        "name": "stable",
+                        "icon": "stable.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "elite-horseman",
+                                "name": "Elite horseman",
+                                "icon": "elite-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-lancer",
+                                "name": "elite lance",
+                                "icon": "elite-lancer.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dock",
+                        "name": "dock",
+                        "icon": "dock.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "baochuan",
+                                "name": "baochuan",
+                                "icon": "baochuan.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "chaser-cannons",
+                                "name": "Chaser Cannons",
+                                "icon": "chaser-cannons.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "explosives",
+                                "name": "Explosives",
+                                "icon": "explosives.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "outpost",
+                        "name": "outpost",
+                        "icon": "outpost.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "cannon",
+                                "name": "Cannon Emplacement",
+                                "icon": "cannon.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "deer-stones",
+                        "name": "deer stones",
+                        "icon": "deer-stones.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "the-silver-tree",
+                        "name": "the silver tree",
+                        "icon": "the-silver-tree.png",
+                        "availableAge": 1,
+                        "items": [
+                            {
+                                "id": "stone-commerce",
+                                "name": "stone commerce",
+                                "icon": "stone-commerce.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "pasture",
+                        "name": "pasture",
+                        "icon": "pasture.png",
+                        "availableAge": 1,
+                        "items": []
+                    },
+                    {
+                        "id": "market",
+                        "name": "market",
+                        "icon": "market.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "stone-commerce",
+                                "name": "stone commerce",
+                                "icon": "stone-commerce.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "blacksmith",
+                        "name": "Blacksmith",
+                        "icon": "blacksmith.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "damascus-steel",
+                                "name": "damascus steel",
+                                "icon": "damascus-steel.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "platecutter-point",
+                                "name": "platecutter point",
+                                "icon": "platecutter-point.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "master-smiths",
+                                "name": "Master Smiths",
+                                "icon": "master-smiths.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "angled-surfaces",
+                                "name": "angled surfaces",
+                                "icon": "angled-surfaces.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "incendiary-arrows",
+                                "name": "incendiary arrows",
+                                "icon": "incendiary-arrows.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "biology",
+                                "name": "biology",
+                                "icon": "biology.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "chemistry",
+                                "name": "chemistry",
+                                "icon": "chemistry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "elite-army-tactics",
+                                "name": "elite army tactics",
+                                "icon": "elite-army-tactics.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "archery-range",
+                        "name": "Archery Range",
+                        "icon": "archery-range.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "elite-archer",
+                                "name": "elite archer",
+                                "icon": "elite-archer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-crossbowman",
+                                "name": "elite crossbowman",
+                                "icon": "elite-crossbowman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "handcannoneer",
+                                "name": "handcannoneer",
+                                "icon": "handcannoneer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-mangudai",
+                                "name": "elite mangudai",
+                                "icon": "elite-mangudai.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "kurultai",
+                        "name": "kurultai",
+                        "icon": "kurultai.png",
+                        "availableAge": 2,
+                        "items": []
+                    },
+                    {
+                        "id": "steppe-redoubt",
+                        "name": "steppe redoubt",
+                        "icon": "steppe-redoubt.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "precision-cross-breeding",
+                                "name": "precision cross-breeding",
+                                "icon": "precision-cross-breeding.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "crosscut-saw",
+                                "name": "crosscut saw",
+                                "icon": "crosscut-saw.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "cupellation",
+                                "name": "cupellation",
+                                "icon": "cupellation.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "prayer-tent",
+                        "name": "prayer tent",
+                        "icon": "prayer-tent.png",
+                        "availableAge": 2,
+                        "items": [
+                            {
+                                "id": "piety",
+                                "name": "piety",
+                                "icon": "piety.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "monastic-shrines",
+                                "name": "monastic shrines",
+                                "icon": "monastic-shrines.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "tithe-barns",
+                                "name": "tithe barns",
+                                "icon": "tithe-barns.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "siege-workshop",
+                        "name": "siege workshop",
+                        "icon": "siege-workshop.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "bombard",
+                                "name": "bombard",
+                                "icon": "bombard.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "roller-shutter-triggers",
+                                "name": "roller shutter triggers",
+                                "icon": "roller-shutter-triggers.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "adjustable-crossbars",
+                                "name": "adjustable-crossbars",
+                                "icon": "adjustable-crossbars.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "siege-works",
+                                "name": "siege works",
+                                "icon": "siege-works.png",
+                                "type": "technology"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "the-white-stupa",
+                        "name": "the white stupa",
+                        "icon": "the-white-stupa.png",
+                        "availableAge": 3,
+                        "items": []
+                    },
+                    {
+                        "id": "khaganate-palace",
+                        "name": "khaganate palace",
+                        "icon": "khaganate-palace.png",
+                        "availableAge": 3,
+                        "items": [
+                            {
+                                "id": "elite-lancer",
+                                "name": "elite lancer",
+                                "icon": "elite-lancer.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-mangudai",
+                                "name": "elite mangudai",
+                                "icon": "elite-mangudai.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "veteran-horseman",
+                                "name": "veteran horseman",
+                                "icon": "veteran-horseman.png",
+                                "type": "unit"
+                            },
+                            {
+                                "id": "elite-horseman",
+                                "name": "elite horseman",
+                                "icon": "elite-horseman.png",
+                                "type": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "monument-of-the-great-khan",
+                        "name": "monument of the great khan",
+                        "icon": "monument-of-the-great-khan.png",
+                        "availableAge": 4,
+                        "items": []
+                    }
+                ]
+            }
+        ]
     }
 }

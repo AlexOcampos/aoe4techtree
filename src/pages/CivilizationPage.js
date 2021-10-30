@@ -10,6 +10,7 @@ import {
   english,
   delhi,
   french,
+  mongol,
 } from "../data/civsInfo.json";
 import { useItemDetailContext } from "../context/itemdetail_context";
 
@@ -35,6 +36,8 @@ const CivilizationPage = () => {
         setCivTree(delhi);
       } else if (civInfo === "french") {
         setCivTree(french);
+      } else if (civInfo === "mongol") {
+        setCivTree(mongol);
       }
     }
   }, []);

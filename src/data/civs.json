@@ -47,8 +47,7 @@
             "codeName": "MO",
             "name": "Mongol",
             "image": "./flag_mongol.png",
-            "civInfo": "mongol",
-            "comingSoon": true
+            "civInfo": "mongol"
         },
         {
             "id": 7,
