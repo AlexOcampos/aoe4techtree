@@ -54,8 +54,7 @@
             "codeName": "RU",
             "name": "Rus",
             "image": "./flag_rus.png",
-            "civInfo": "rus",
-            "comingSoon": true
+            "civInfo": "rus"
         }
     ]
 }
