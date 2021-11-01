@@ -49,8 +49,6 @@ const CivTree = ({ civTree }) => {
   const { isItemDetailOpen, closeItemDetail, detail } = useItemDetailContext();
   let columnsWidth = calculateColumnsWidth(civTree);
 
-  console.log(`Class: ${detail.genre}`);
-
   return (
     //TODO: refactor in a loop
     <CivTreeContainer>
@@ -136,6 +134,7 @@ const CivTree = ({ civTree }) => {
             <BottomSheetTitle
               title={detail.customName}
               description={detail.itemDescription}
+              bonus={detail.bonus}
             />
           ) : (
             "<NO DATA>"
@@ -150,7 +149,7 @@ const CivTree = ({ civTree }) => {
           maxHeight * 0.6,
         ]}
       >
-        {detail ? (
+        {detail && detail.genre ? (
           detail.genre === "Tech." ? (
             <BottomSheetTech detail={detail} />
           ) : detail.genre === "Structure" ? (
@@ -159,7 +158,7 @@ const CivTree = ({ civTree }) => {
             <BottomSheetUnit detail={detail} />
           )
         ) : (
-          "No data"
+          <p style={{ color: "black", marginLeft: "3rem" }}>No data</p>
         )}
       </BottomSheet>
     </CivTreeContainer>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const BottomSheetUnit = ({ detail }) => {
-  console.log(detail);
   let ageFrom;
   if (detail.ageId === "1") {
     ageFrom = "I (Dark Age)";
@@ -41,28 +40,53 @@ const BottomSheetUnit = ({ detail }) => {
           <p>
             <b>Speed:</b> {detail.speed}
           </p>
-          <p>
-            <b>Attack:</b> {detail.attack}
-          </p>
-          <p>
-            <b>Attack speed:</b> {detail.attackSpeed}
-          </p>
-          <p>
-            <b>DPS:</b> {detail.dps}
-          </p>
-          <p>
-            <b>Damage Type:</b> {detail.damageType}
-          </p>
-          <p>
-            <b>Area Attack:</b> {detail.areaOfEffect}
-          </p>
+          {detail.attack ? (
+            <p>
+              <b>Attack:</b> {detail.attack}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.attackSpeed ? (
+            <p>
+              <b>Attack speed:</b> {detail.attackSpeed}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.dps ? (
+            <p>
+              <b>DPS:</b> {detail.dps}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.damageType && detail.damageType !== "None" ? (
+            <p>
+              <b>Damage Type:</b> {detail.damageType}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.areaOfEffect ? (
+            <p>
+              <b>Area Attack:</b> {detail.areaOfEffect}
+            </p>
+          ) : (
+            ""
+          )}
           <p>
             <b>Armor:</b> {detail.meleeArmor} / {detail.rangedArmor}
           </p>
-          <p>
-            <b>Bonus Damage:</b> {detail.bonusDamage}{" "}
-            {detail.bonusDamageAgainst}
-          </p>
+          {detail.bonusDamage ? (
+            <p>
+              <b>Bonus Damage:</b> {detail.bonusDamage}{" "}
+              {detail.bonusDamageAgainst}{" "}
+            </p>
+          ) : (
+            ""
+          )}
+
           <p>
             <b>Line of sight:</b> {detail.lineOfSight}
           </p>

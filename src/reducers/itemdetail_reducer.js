@@ -4,7 +4,7 @@ import {
   UPDATE_ITEM,
   CIV_UPDATE,
 } from "../actions";
-import { stats } from "../data/data_20211028.json";
+import { stats } from "../data/data_20211101.json";
 
 const itemdetail_reducer = (state, action) => {
   if (action.type === ITEMDETAIL_OPEN) {
@@ -17,7 +17,7 @@ const itemdetail_reducer = (state, action) => {
   if (action.type === UPDATE_ITEM) {
     const { itemId } = action.payload;
     var toRet = undefined;
-    if (state && state.civCode) {
+    if (state && state.civCode && stats) {
       let itemStats = stats.filter((item) => {
         if (item[`${state.civCode.toLowerCase()}`] && item["id"] === itemId) {
           return item;

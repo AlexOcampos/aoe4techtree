@@ -1077,7 +1077,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -2138,9 +2138,9 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "camel archer",
+                                "id": "camel-archer",
                                 "name": "camel archer",
-                                "icon": "camel archer.png",
+                                "icon": "camel-archer.png",
                                 "type": "unit"
                             }
                         ]
@@ -2273,9 +2273,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -2366,9 +2366,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -2429,9 +2429,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "armored-carabans",
-                                "name": "armored carabans",
-                                "icon": "armored-carabans.png",
+                                "id": "armored-caravans",
+                                "name": "armored caravans",
+                                "icon": "armored-caravans.png",
                                 "type": "technology"
                             },
                             {
@@ -2619,7 +2619,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -3865,9 +3865,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology",
                                 "details": {}
                             }
@@ -4209,7 +4209,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -5235,15 +5235,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "imperial-examinations",
-                                "name": "imperial examinations",
-                                "icon": "imperial-examinations.png",
-                                "type": "technology"
-                            },
-                            {
-                                "id": "efficiency-training",
-                                "name": "efficiency training",
-                                "icon": "efficiency-training.png",
+                                "id": "imperial-examination",
+                                "name": "imperial examination",
+                                "icon": "imperial-examination.png",
                                 "type": "technology"
                             }
                         ]
@@ -5504,9 +5498,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -5603,9 +5597,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -5835,7 +5829,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -6083,7 +6077,7 @@
                             },
                             {
                                 "id": "angled-surfaces",
-                                "name": "Wedge Rivets",
+                                "name": "angled surfaces",
                                 "icon": "angled-surfaces.png",
                                 "type": "technology"
                             }
@@ -6248,9 +6242,9 @@
                                 "type": "technology"
                             },
                             {
-                                "id": "reaload-drills",
-                                "name": "reaload drills",
-                                "icon": "reaload-drills.png",
+                                "id": "reload-drills",
+                                "name": "reload drills",
+                                "icon": "reload-drills.png",
                                 "type": "technology"
                             },
                             {
@@ -7123,9 +7117,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -7168,9 +7162,9 @@
                                 "type": "technology"
                             },
                             {
-                                "id": "two-handed-weapons",
-                                "name": "two-handed weapons",
-                                "icon": "two-handed-weapons.png",
+                                "id": "two-handed-weapon",
+                                "name": "two-handed weapon",
+                                "icon": "two-handed-weapon.png",
                                 "type": "technology"
                             }
                         ]
@@ -7240,9 +7234,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -7526,7 +7520,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -8845,9 +8839,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -8950,9 +8944,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -9218,7 +9212,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"
@@ -10387,9 +10381,9 @@
                                 "type": "technology"
                             },
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -10493,9 +10487,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -11846,9 +11840,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "acid-distilation",
+                                "id": "acid-distilization",
                                 "name": "Acid Distillation",
-                                "icon": "acid-distilation.png",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]
@@ -11939,9 +11933,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -11953,9 +11947,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springland",
+                                "id": "springald",
                                 "name": "Springald",
-                                "icon": "springland-emplacement.png",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -12175,7 +12169,7 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "counterweight-trebuchet",
+                                "id": "trebuchet",
                                 "name": "counterweight trebuchet",
                                 "icon": "counterweight-trebuchet.png",
                                 "type": "unit"

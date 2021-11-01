@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const BottomSheetBuilding = ({ detail }) => {
-  console.log(detail);
   let ageFrom;
   if (detail.ageId === "1") {
     ageFrom = "I (Dark Age)";
