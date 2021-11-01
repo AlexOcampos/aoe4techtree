@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { CivInfo, CivTree } from "../components";
+import { CivInfo, CivTree, FloatingButton } from "../components";
 import { civilizations } from "../data/civs.json";
 import {
   abbasid,
@@ -59,6 +59,7 @@ const CivilizationPage = () => {
       <div className="container">
         <CivInfo civTree={civTree} />
         <CivTree civTree={civTree} />
+        <FloatingButton title={"Feedback"} />
       </div>
     </Wrapper>
   );

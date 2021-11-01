@@ -1,6 +1,7 @@
 :root {
   --clr-primary-1: #dfbc6b;
   --clr-primary-2: rgba(208, 159, 30, 0.6);
+  --clr-primary-3: rgba(255, 183, 0, 0.781);
   --clr-primary-gradient: linear-gradient(0deg, #ffedc3 0%, #ffdb88 100%);
   --clr-primary-background: #151825;
   --clr-primary-background-2: rgb(38, 50, 67);

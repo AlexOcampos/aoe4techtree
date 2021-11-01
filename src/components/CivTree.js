@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { Building } from "../components";
+import {
+  Building,
+  BottomSheetTitle,
+  BottomSheetUnit,
+  BottomSheetTech,
+  BottomSheetBuilding,
+} from "../components";
 import HorizontalScroll from "react-scroll-horizontal";
 
 // ItemDetail
@@ -42,6 +48,8 @@ const calculateColumnsWidth = (tree) => {
 const CivTree = ({ civTree }) => {
   const { isItemDetailOpen, closeItemDetail, detail } = useItemDetailContext();
   let columnsWidth = calculateColumnsWidth(civTree);
+
+  console.log(`Class: ${detail.genre}`);
 
   return (
     //TODO: refactor in a loop
@@ -124,12 +132,14 @@ const CivTree = ({ civTree }) => {
       <BottomSheet
         open={isItemDetailOpen}
         header={
-          <h1
-            className="popup-black"
-            style={{ color: "black", textTransform: "capitalize" }}
-          >
-            {detail ? detail.customName : "<NO DATA>"}
-          </h1>
+          detail ? (
+            <BottomSheetTitle
+              title={detail.customName}
+              description={detail.itemDescription}
+            />
+          ) : (
+            "<NO DATA>"
+          )
         }
         onDismiss={closeItemDetail}
         defaultSnap={({ snapPoints, lastSnap }) =>
@@ -141,27 +151,13 @@ const CivTree = ({ civTree }) => {
         ]}
       >
         {detail ? (
-          <div style={{ color: "black", overflow: "auto", margin: "2rem" }}>
-            <article>
-              {detail.itemDescription
-                ? detail.itemDescription
-                    .split("\\r\\n")
-                    .map((desc, i) => <p key={`itemDesc-${i}`}>{desc}</p>)
-                : ""}
-            </article>
-            <article>{detail.class}</article>
-            <article>
-              {detail.food && detail.food > 0 ? <p>Food: {detail.food}</p> : ""}
-              {detail.wood && detail.wood > 0 ? <p>Wood: {detail.wood}</p> : ""}
-              {detail.gold && detail.gold > 0 ? <p>Gold: {detail.gold}</p> : ""}
-              {detail.stone && detail.stone > 0 ? (
-                <p>Stone: {detail.stone}</p>
-              ) : (
-                ""
-              )}
-              {detail.time ? <p>Time: {detail.time}s</p> : ""}
-            </article>
-          </div>
+          detail.genre === "Tech." ? (
+            <BottomSheetTech detail={detail} />
+          ) : detail.genre === "Structure" ? (
+            <BottomSheetBuilding detail={detail} />
+          ) : (
+            <BottomSheetUnit detail={detail} />
+          )
         ) : (
           "No data"
         )}

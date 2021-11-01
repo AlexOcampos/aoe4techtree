@@ -9,8 +9,8 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Coming soon:</b> All civs, detail info for each unit/building/tech,
-          and more...
+          <b>Coming soon:</b> Detail info for each unit/building/tech, and
+          more...
         </span>
         <span>Last update: 2021/10/31 02:08</span>
       </div>
