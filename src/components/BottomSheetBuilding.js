@@ -11,6 +11,15 @@ const BottomSheetBuilding = ({ detail }) => {
   } else {
     ageFrom = "IV (Imperial Age)";
   }
+
+  const hpByNumImprovements = (hpByImprovements) => {
+    return hpByImprovements.map((hp) => {
+      return `${hp.hp} (${hp.numImprovements} improvement${
+        hp.numImprovements > 1 ? "s" : ""
+      })`;
+    });
+  };
+
   return (
     <BottomSheetBuildingContainer>
       <article>
@@ -21,6 +30,25 @@ const BottomSheetBuilding = ({ detail }) => {
           {detail.gold && detail.gold > 0 ? <p>Gold: {detail.gold}</p> : ""}
           {detail.stone && detail.stone > 0 ? <p>Stone: {detail.stone}</p> : ""}
           {detail.time ? <p>Time: {detail.time} sg</p> : ""}
+          {detail.costByAge
+            ? detail.costByAge.map((age, index) => (
+                <p key={`costbyage-${index}`}>
+                  Age: {age.age} -{" "}
+                  {age.cost.food && age.cost.food > 0
+                    ? `Food: ${age.cost.food}  `
+                    : ""}
+                  {age.cost.wood && age.cost.wood > 0
+                    ? `Wood: ${age.cost.wood}  `
+                    : ""}
+                  {age.cost.gold && age.cost.gold > 0
+                    ? `Gold: ${age.cost.gold}  `
+                    : ""}
+                  {age.cost.stone && age.cost.stone > 0
+                    ? `Stone: ${age.cost.stone}  `
+                    : ""}
+                </p>
+              ))
+            : ""}
         </div>
         <div className="column">
           <h2>Basic Info</h2>
@@ -34,9 +62,21 @@ const BottomSheetBuilding = ({ detail }) => {
         </div>
         <div className="column">
           <h2>Stats</h2>
-          <p>
-            <b>HP:</b> {detail.hp}
-          </p>
+          {detail.hp || detail.hpByImprovements ? (
+            <p>
+              <b>HP:</b>{" "}
+              {detail.hp
+                ? detail.hp
+                : detail.hpByImprovements.map((hp, index) => (
+                    <p key={`hpByImprovements-${index}`}>
+                      {hp.hp} ({hp.numImprovements} improvement
+                      {hp.numImprovements > 1 ? "s" : ""})
+                    </p>
+                  ))}
+            </p>
+          ) : (
+            ""
+          )}
           {detail.attack ? (
             <p>
               <b>Attack:</b> {detail.attack}
@@ -72,9 +112,13 @@ const BottomSheetBuilding = ({ detail }) => {
           ) : (
             ""
           )}
-          <p>
-            <b>Armor:</b> {detail.meleeArmor} / {detail.rangedArmor}
-          </p>
+          {detail.meleeArmor || detail.rangedArmor ? (
+            <p>
+              <b>Armor:</b> {detail.meleeArmor} / {detail.rangedArmor}
+            </p>
+          ) : (
+            ""
+          )}
           {detail.bonusDamage ? (
             <p>
               <b>Bonus Damage:</b> {detail.bonusDamage}{" "}
@@ -83,9 +127,13 @@ const BottomSheetBuilding = ({ detail }) => {
           ) : (
             ""
           )}
-          <p>
-            <b>Line of sight:</b> {detail.lineOfSight}
-          </p>
+          {detail.lineOfSight ? (
+            <p>
+              <b>Line of sight:</b> {detail.lineOfSight}
+            </p>
+          ) : (
+            ""
+          )}
         </div>
       </article>
     </BottomSheetBuildingContainer>

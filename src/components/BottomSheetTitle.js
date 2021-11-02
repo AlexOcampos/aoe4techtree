@@ -10,20 +10,12 @@ const BottomSheetTitle = ({ title, description, image, bonus }) => {
     const bonuses = bonus.split(", ");
 
     if (placeholders.length > bonuses.length) {
-      placeholders.map((placeholder, index) => {
-        console.log(
-          `replacing ${placeholder} (i:${index}) - bonus: ${bonuses}`
-        );
+      placeholders.map((placeholder) => {
         descCompleted = descCompleted.replace(placeholder, bonuses[0]);
-        console.log(`New desc: ${descCompleted}`);
       });
     } else {
       placeholders.map((placeholder, index) => {
-        console.log(
-          `replacing ${placeholder} (i:${index}) - bonus: ${bonuses}`
-        );
         descCompleted = descCompleted.replace(placeholder, bonuses[index]);
-        console.log(`New desc: ${descCompleted}`);
       });
     }
   }
