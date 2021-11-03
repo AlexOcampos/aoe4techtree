@@ -23,7 +23,7 @@ const ErrorPage = () => {
                   <div className="overlay" style={{ opacity: 1 }}>
                     <span className="civName">Coming soon</span>
                   </div>
-                  <img src={civ.image} alt={civ.name} />
+                  <img src={civ.imageSmall} alt={civ.name} />
                 </div>
               ) : (
                 <Link to={`/civilization/${civ.id}`}>
@@ -31,7 +31,7 @@ const ErrorPage = () => {
                     <span className="civName">{civ.name}</span>
                   </div>
 
-                  <img src={civ.image} alt={civ.name} />
+                  <img src={civ.imageSmall} alt={civ.name} />
                 </Link>
               )}
             </article>
