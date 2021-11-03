@@ -12,7 +12,7 @@ const ErrorPage = () => {
           <b>Coming soon:</b> Detail info for each unit/building/tech, and
           more...
         </span>
-        <span>Last update: 2021/11/03 13:02</span>
+        <span>Last update: 2021/11/03 16:00</span>
       </div>
       <div className="civs">
         {civilizations.map((civ) => {
