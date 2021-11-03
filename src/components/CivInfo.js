@@ -57,7 +57,7 @@ const CivInfoContainer = styled.div`
 
   height: 100vh;
   padding: 0.6rem;
-  width: 30rem;
+  width: 30vw;
   border: 3px solid var(--clr-primary-1);
   box-sizing: border-box;
   background: var(--clr-primary-background);

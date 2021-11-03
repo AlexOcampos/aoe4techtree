@@ -70,7 +70,7 @@ const BottomSheetTitleContainer = styled.div`
   .image {
     width: 80px;
     height: 80px;
-    background-color: var(--clr-primary-1);
+    background-color: var(--clr-white);
     margin-left: 2rem;
     margin-right: 2rem;
   }
