@@ -8,7 +8,17 @@ const AboutPage = () => {
       <div className="content">
         <article>
           <h2>About the project:</h2>
-          <p>A project by rudyairlines. </p>
+          <p>
+            A project by{" "}
+            <a
+              href="https://twitter.com/rudyairlines"
+              target="_blank"
+              rel="noreferrer"
+            >
+              rudyairlines
+            </a>
+            .{" "}
+          </p>
           <p>Do you want to contribute? Contact me.</p>
           <div className="support">
             <p>
@@ -28,13 +38,24 @@ const AboutPage = () => {
           <h2>Contributors:</h2>
           <p>
             Special thanks to{" "}
-            <a href="https://www.twitch.tv/pinch3terneira">Pinch3Terneira</a>{" "}
+            <a
+              href="https://www.twitch.tv/pinch3terneira"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pinch3Terneira
+            </a>{" "}
             for his colaboration in the project.
           </p>
           <p>
             Also thanks to MugenNoSora who make{" "}
-            <a href="https://docs.google.com/spreadsheets/d/1LG0We2pTFZsbFm_k1SKLix8gxSq_9n5R_Ic3G2tVzBg">
-              this great document
+            <a
+              href="https://docs.google.com/spreadsheets/d/1LG0We2pTFZsbFm_k1SKLix8gxSq_9n5R_Ic3G2tVzBg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              this great document who inspired me and help me to make this
+              website.
             </a>
           </p>
         </article>

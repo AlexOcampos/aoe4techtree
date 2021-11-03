@@ -4,7 +4,11 @@ const FloatingButton = ({ title }) => {
   return (
     <FloatingButtonContainer>
       <div className="rotate">
-        <a href="https://forms.gle/i95wXgNzinJZQKUD6" target="_blank">
+        <a
+          href="https://forms.gle/i95wXgNzinJZQKUD6"
+          target="_blank"
+          rel="noreferrer"
+        >
           {title}
         </a>
       </div>
