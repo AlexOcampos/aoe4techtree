@@ -3546,7 +3546,7 @@
                                 "id": "shipwrights",
                                 "name": "Shipwrights",
                                 "icon": "shipwrights.png",
-                                "type": "unit"
+                                "type": "technology"
                             },
                             {
                                 "id": "additional-sails",
@@ -3934,9 +3934,9 @@
                                 "details": {}
                             },
                             {
-                                "id": "navigator-lookup",
-                                "name": "Navigator Lookup",
-                                "icon": "navigator-lookup.png",
+                                "id": "navigator-lookout",
+                                "name": "Navigator Lookout",
+                                "icon": "navigator-lookout.png",
                                 "type": "technology",
                                 "details": {}
                             },
@@ -4518,7 +4518,7 @@
                                 "id": "arrow-volley",
                                 "name": "arrow volley",
                                 "icon": "arrow-volley.png",
-                                "type": "unit"
+                                "type": "technology"
                             }
                         ]
                     },
@@ -9969,26 +9969,7 @@
                         "name": "steppe redoubt",
                         "icon": "steppe-redoubt.png",
                         "availableAge": 2,
-                        "items": [
-                            {
-                                "id": "forestry",
-                                "name": "forestry",
-                                "icon": "forestry.png",
-                                "type": "technology"
-                            },
-                            {
-                                "id": "wheelbarrow",
-                                "name": "wheelbarrow",
-                                "icon": "wheelbarrow.png",
-                                "type": "technology"
-                            },
-                            {
-                                "id": "survival-techniques",
-                                "name": "survival techniques",
-                                "icon": "survival-techniques.png",
-                                "type": "technology"
-                            }
-                        ]
+                        "items": []
                     },
                     {
                         "id": "prayer-tent",
@@ -10291,15 +10272,33 @@
                         "availableAge": 2,
                         "items": [
                             {
+                                "id": "forestry",
+                                "name": "forestry",
+                                "icon": "forestry.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "wheelbarrow",
+                                "name": "wheelbarrow",
+                                "icon": "wheelbarrow.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "survival-techniques",
+                                "name": "survival techniques",
+                                "icon": "survival-techniques.png",
+                                "type": "technology"
+                            },
+                            {
                                 "id": "horticulture",
                                 "name": "horticulture",
                                 "icon": "horticulture.png",
                                 "type": "technology"
                             },
                             {
-                                "id": "double-broadax",
-                                "name": "double broadax",
-                                "icon": "double-broadax.png",
+                                "id": "double-broadaxe",
+                                "name": "double broadaxe",
+                                "icon": "double-broadaxe.png",
                                 "type": "technology"
                             },
                             {
@@ -10624,9 +10623,9 @@
                                 "type": "technology"
                             },
                             {
-                                "id": "acid-distillation",
-                                "name": "acid-distillation",
-                                "icon": "acid-distillation.png",
+                                "id": "acid-distilization",
+                                "name": "acid distilization",
+                                "icon": "acid-distilization.png",
                                 "type": "technology"
                             }
                         ]

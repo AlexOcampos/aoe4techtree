@@ -2755,6 +2755,38 @@
             "itemDescription": "Trebuchet projectiles shatter on impact, increasing their area of effect."
         },
         {
+            "mo": "MO",
+            "id": "shaman",
+            "customName": "Shaman",
+            "ageId": "3",
+            "category": "Standard",
+            "producedBuildBy": "Mosque",
+            "genre": "Land Unit",
+            "class": "Religious",
+            "attRange": "None",
+            "type": "Religious",
+            "Role": "Support",
+            "food": "0",
+            "wood": "0",
+            "gold": "150",
+            "Stone": "0",
+            "time": "45",
+            "population": "1",
+            "garrison": "0",
+            "speed": "4.00",
+            "move": "1.00",
+            "hp": "90",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "damageType": "None",
+            "additionalInfo": "Can heal, pick up relics, convert.",
+            "lineOfSight": "30",
+            "heightOfSight": "10",
+            "itemClassification": "Religious",
+            "itemDescription": "Support unit with no combat capability. Can pick up Relics, convert enemy units, and capture Sacred Sites.\\r\\n+ Heals friendly units\\r\\n- Slow movement speed"
+        },
+        {
             "en": "EN",
             "id": "setup-camp",
             "customName": "Setup Camp",
@@ -4997,6 +5029,90 @@
             "itemDescription": "Confounding mobile ranged cavalry that can fire while moving.\\r\\n+ High rate of fire\\r\\n- Low weapon range"
         },
         {
+            "mo": "MO",
+            "id": "veteran-mangudai",
+            "customName": "Veteran Mangudai",
+            "ageId": "3",
+            "category": "Unique",
+            "producedBuildBy": "Archery Range",
+            "genre": "Land Unit",
+            "class": "Light",
+            "attRange": "Ranged",
+            "type": "Cavalry",
+            "Role": "Damage",
+            "food": "120",
+            "wood": "0",
+            "gold": "40",
+            "Stone": "0",
+            "time": "30",
+            "population": "1",
+            "garrison": "0",
+            "speed": "6.50",
+            "move": "1.63",
+            "hp": "105",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "attack": "9",
+            "NumAttacks": "1",
+            "damage": "9",
+            "attackSpeed": "1.25",
+            "dps": "7.20",
+            "maxAttackRange": "14.00",
+            "minAttackRange": "0.00",
+            "ingameMaxAttackRange": "3.50",
+            "ingameMinAttackRange": "0.00",
+            "damageType": "Ranged",
+            "areaOfEffect": "No",
+            "additionalInfo": "Can shoot while moving.",
+            "lineOfSight": "34",
+            "heightOfSight": "10",
+            "itemClassification": "Light Ranged Cavalry",
+            "itemDescription": "Confounding mobile ranged cavalry that can fire while moving.\\r\\n+ High rate of fire\\r\\n- Low weapon range"
+        },
+        {
+            "mo": "MO",
+            "id": "elite-mangudai",
+            "customName": "Elite Mangudai",
+            "ageId": "4",
+            "category": "Unique",
+            "producedBuildBy": "Archery Range",
+            "genre": "Land Unit",
+            "class": "Light",
+            "attRange": "Ranged",
+            "type": "Cavalry",
+            "Role": "Damage",
+            "food": "120",
+            "wood": "0",
+            "gold": "40",
+            "Stone": "0",
+            "time": "30",
+            "population": "1",
+            "garrison": "0",
+            "speed": "6.50",
+            "move": "1.63",
+            "hp": "120",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "attack": "10",
+            "NumAttacks": "1",
+            "damage": "10",
+            "attackSpeed": "1.25",
+            "dps": "8.00",
+            "maxAttackRange": "14.00",
+            "minAttackRange": "0.00",
+            "ingameMaxAttackRange": "3.50",
+            "ingameMinAttackRange": "0.00",
+            "damageType": "Ranged",
+            "areaOfEffect": "No",
+            "additionalInfo": "Can shoot while moving.",
+            "lineOfSight": "34",
+            "heightOfSight": "10",
+            "itemClassification": "Light Ranged Cavalry",
+            "itemDescription": "Confounding mobile ranged cavalry that can fire while moving.\\r\\n+ High rate of fire\\r\\n- Low weapon range"
+        },
+        {
             "ab": "AB",
             "ch": "CH",
             "de": "DE",
@@ -5095,6 +5211,7 @@
         },
         {
             "hr": "HR",
+            "en": "EN",
             "id": "early-man-at-arms",
             "customName": "Man-at-Arms (Early)",
             "ageId": "2",
@@ -5142,6 +5259,7 @@
             "de": "DE",
             "fr": "FR",
             "mo": "MO",
+            "en": "EN",
             "ru": "RU",
             "id": "man-at-arms",
             "customName": "Man-at-Arms",
@@ -5405,7 +5523,7 @@
         {
             "en": "EN",
             "id": "veteran-longbowman",
-            "customName": "Longbowman",
+            "customName": "Veteran Longbowman",
             "ageId": "3",
             "category": "Unique",
             "producedBuildBy": "Barrack",
@@ -5448,7 +5566,7 @@
         {
             "en": "EN",
             "id": "elite-longbowman",
-            "customName": "Longbowman",
+            "customName": "Elite Longbowman",
             "ageId": "4",
             "category": "Unique",
             "producedBuildBy": "Barrack",
@@ -6907,45 +7025,14 @@
             "gold": "0",
             "Stone": "0",
             "time": "120",
-            "costByAge": [
-                {
-                    "age": 1,
-                    "cost": {
-                        "food": 400,
-                        "wood": 0,
-                        "gold": 200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 2,
-                    "cost": {
-                        "food": 1200,
-                        "wood": 0,
-                        "gold": 600,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 3,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 4,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                }
-            ],
+            "costByAge": "[\r\n\t{\r\n\t\t\"age\": 1,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 2,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 1200,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 600,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 3,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 4,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t}\r\n]",
             "population": "0",
+            "garrison": "0",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "lineOfSight": "25",
+            "heightOfSight": "8",
             "itemClassification": "Wing (Knowledge, Culture, Economic, Military)",
             "itemDescription": "Constructs the Culture Wing.\\r\\n\\r\\nThe following cultural technologies become available:\\r\\n• Preservation of Knowledge (Feudal Age)\\r\\n• Medical Centers (Castle Age)\\r\\n• Faith (Imperial Age)"
         },
@@ -6966,45 +7053,14 @@
             "gold": "0",
             "Stone": "0",
             "time": "120",
-            "costByAge": [
-                {
-                    "age": 1,
-                    "cost": {
-                        "food": 400,
-                        "wood": 0,
-                        "gold": 200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 2,
-                    "cost": {
-                        "food": 1200,
-                        "wood": 0,
-                        "gold": 600,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 3,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 4,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                }
-            ],
+            "costByAge": "[\r\n\t{\r\n\t\t\"age\": 1,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 2,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 1200,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 600,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 3,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 4,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t}\r\n]",
             "population": "0",
+            "garrison": "0",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "lineOfSight": "25",
+            "heightOfSight": "8",
             "itemClassification": "Wing (Knowledge, Culture, Economic, Military)",
             "itemDescription": "Constructs the Economic Wing.\\r\\n\\r\\nThe following economic technologies become available:\\r\\n• Fresh Foodstuffs (Feudal Age)\\r\\n• Agriculture (Castle Age)\\r\\n• Improved Processing (Imperial Age)"
         },
@@ -7025,45 +7081,14 @@
             "gold": "0",
             "Stone": "0",
             "time": "120",
-            "costByAge": [
-                {
-                    "age": 1,
-                    "cost": {
-                        "food": 400,
-                        "wood": 0,
-                        "gold": 200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 2,
-                    "cost": {
-                        "food": 1200,
-                        "wood": 0,
-                        "gold": 600,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 3,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 4,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                }
-            ],
+            "costByAge": "[\r\n\t{\r\n\t\t\"age\": 1,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 2,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 1200,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 600,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 3,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 4,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t}\r\n]",
             "population": "0",
+            "garrison": "0",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "lineOfSight": "25",
+            "heightOfSight": "8",
             "itemClassification": "Wing (Knowledge, Culture, Economic, Military)",
             "itemDescription": "Constructs the Military Wing.\\r\\n\\r\\nThe following military technologies become available:\\r\\n• Camel Support (Feudal Age)\\r\\n• Camel Rider Shields (Castle Age)\\r\\n• Boot Camp (Imperial Age)"
         },
@@ -7084,45 +7109,14 @@
             "gold": "0",
             "Stone": "0",
             "time": "120",
-            "costByAge": [
-                {
-                    "age": 1,
-                    "cost": {
-                        "food": 400,
-                        "wood": 0,
-                        "gold": 200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 2,
-                    "cost": {
-                        "food": 1200,
-                        "wood": 0,
-                        "gold": 600,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 3,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                },
-                {
-                    "age": 4,
-                    "cost": {
-                        "food": 2400,
-                        "wood": 0,
-                        "gold": 1200,
-                        "stone": 0
-                    }
-                }
-            ],
+            "costByAge": " [\r\n\t{\r\n\t\t\"age\": 1,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 2,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 1200,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 600,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 3,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t},\r\n\t{\r\n\t\t\"age\": 4,\r\n\t\t\"cost\": {\r\n\t\t\t\"food\": 2400,\r\n\t\t\t\"wood\": 0,\r\n\t\t\t\"gold\": 1200,\r\n\t\t\t\"stone\": 0\t\t\t\r\n\t\t}\r\n\t}\r\n]",
             "population": "0",
+            "garrison": "0",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "lineOfSight": "25",
+            "heightOfSight": "8",
             "itemClassification": "Wing (Knowledge, Culture, Economic, Military)",
             "itemDescription": "Constructs the Trade Wing.\\r\\n\\r\\nThe following trade technologies become available:\\r\\n• Spice Roads (Feudal Age)\\r\\n• Armored Caravans (Castle Age)\\r\\n• Grand Bazaar (Imperial Age)"
         },
@@ -7145,28 +7139,7 @@
             "time": "30",
             "population": "0",
             "garrison": "0",
-            "hpByImprovements": [
-                {
-                    "numImprovements": 0,
-                    "hp": 2000
-                },
-                {
-                    "numImprovements": 1,
-                    "hp": 7000
-                },
-                {
-                    "numImprovements": 2,
-                    "hp": 12000
-                },
-                {
-                    "numImprovements": 3,
-                    "hp": 17000
-                },
-                {
-                    "numImprovements": 4,
-                    "hp": 2000
-                }
-            ],
+            "hpByImprovements": "[\r\n\t{\r\n\t\t\"numImprovements\": 0,\r\n\t\t\"hp\": 2000\r\n\t},\r\n\t{\r\n\t\t\"numImprovements\": 1,\r\n\t\t\"hp\": 7000\r\n\t},\r\n\t{\r\n\t\t\"numImprovements\": 2,\r\n\t\t\"hp\": 12000\r\n\t},\r\n\t{\r\n\t\t\"numImprovements\": 3,\r\n\t\t\"hp\": 17000\r\n\t},\r\n\t{\r\n\t\t\"numImprovements\": 4,\r\n\t\t\"hp\": 22000\r\n\t}\r\n]",
             "meleeArmor": "0",
             "rangedArmor": "50",
             "fireArmor": "5",
@@ -9270,6 +9243,7 @@
         {
             "ab": "AB",
             "de": "DE",
+            "en": "EN",
             "fr": "FR",
             "mo": "MO",
             "ru": "RU",
@@ -13003,7 +12977,7 @@
             "de": "DE",
             "id": "efficient-production",
             "customName": "Efficient Production",
-            "ageId": "I",
+            "ageId": "1",
             "category": "Unique",
             "producedBuildBy": "Mosque",
             "genre": "Tech.",
@@ -13023,9 +12997,9 @@
             "de": "DE",
             "id": "forced-march",
             "customName": "Forced March",
-            "ageId": "III",
+            "ageId": "3",
             "category": "Unique",
-            "producedBuildBy": "Blacksmith 🛠",
+            "producedBuildBy": "Blacksmith",
             "genre": "Tech.",
             "class": "Technology",
             "attRange": "None",
@@ -13043,7 +13017,7 @@
             "de": "DE",
             "id": "sanctity",
             "customName": "Sanctity",
-            "ageId": "I",
+            "ageId": "1",
             "category": "Unique",
             "producedBuildBy": "Mosque",
             "genre": "Tech.",
@@ -13063,9 +13037,9 @@
             "de": "DE",
             "id": "siege-elephant",
             "customName": "Siege Elephant",
-            "ageId": "IV",
+            "ageId": "4",
             "category": "Unique",
-            "producedBuildBy": "Archery Range ⚔",
+            "producedBuildBy": "Archery Range",
             "genre": "Tech.",
             "class": "Technology",
             "attRange": "None",
@@ -13082,7 +13056,7 @@
             "de": "DE",
             "id": "slow-burning-defenses",
             "customName": "Slow-Burning Defenses",
-            "ageId": "III",
+            "ageId": "3",
             "category": "Unique",
             "producedBuildBy": "Keep",
             "genre": "Tech.",
@@ -13102,7 +13076,7 @@
             "de": "DE",
             "id": "village-fortresses",
             "customName": "Village Fortresses",
-            "ageId": "IV",
+            "ageId": "4",
             "category": "Unique",
             "producedBuildBy": "Keep",
             "genre": "Tech.",
@@ -13121,7 +13095,7 @@
             "de": "DE",
             "id": "zeal",
             "customName": "Zeal",
-            "ageId": "IV",
+            "ageId": "4",
             "category": "Unique",
             "producedBuildBy": "Mosque",
             "genre": "Tech.",
@@ -13136,6 +13110,36 @@
             "itemClassification": "Religious Technology",
             "bonus": "+50%, 3",
             "itemDescription": "Units healed by Scholars gain +%1%% attack speed for %2% seconds."
+        },
+        {
+            "mo": "MO",
+            "id": "herdable-sheep",
+            "customName": "Sheep",
+            "ageId": "2",
+            "category": "Unique",
+            "producedBuildBy": "Pasture",
+            "genre": "Resource",
+            "class": "Food",
+            "attRange": "None",
+            "type": "Animal",
+            "Role": "Herdable",
+            "food": "250",
+            "wood": "0",
+            "gold": "0",
+            "Stone": "0",
+            "time": "250",
+            "costByAge": "90",
+            "speed": "0.9",
+            "move": "0.22",
+            "hp": "12",
+            "hpByImprovements": "0.048",
+            "meleeArmor": "0",
+            "rangedArmor": "0",
+            "fireArmor": "0",
+            "lineOfSight": "8",
+            "heightOfSight": "10",
+            "itemClassification": "Food Source",
+            "itemDescription": "Bring a Scout near this gentle Sheep to herd it. Sheep automatically follow any Scouts that they are herded to. Dead Sheep provide Food that can be gathered by Villagers.\\n\\nYou monster."
         }
     ]
 }

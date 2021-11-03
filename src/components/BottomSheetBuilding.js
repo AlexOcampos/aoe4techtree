@@ -12,14 +12,6 @@ const BottomSheetBuilding = ({ detail }) => {
     ageFrom = "IV (Imperial Age)";
   }
 
-  const hpByNumImprovements = (hpByImprovements) => {
-    return hpByImprovements.map((hp) => {
-      return `${hp.hp} (${hp.numImprovements} improvement${
-        hp.numImprovements > 1 ? "s" : ""
-      })`;
-    });
-  };
-
   return (
     <BottomSheetBuildingContainer>
       <article>
@@ -31,7 +23,7 @@ const BottomSheetBuilding = ({ detail }) => {
           {detail.stone && detail.stone > 0 ? <p>Stone: {detail.stone}</p> : ""}
           {detail.time ? <p>Time: {detail.time} sg</p> : ""}
           {detail.costByAge
-            ? detail.costByAge.map((age, index) => (
+            ? JSON.parse(detail.costByAge).map((age, index) => (
                 <p key={`costbyage-${index}`}>
                   Age: {age.age} -{" "}
                   {age.cost.food && age.cost.food > 0
@@ -67,7 +59,7 @@ const BottomSheetBuilding = ({ detail }) => {
               <b>HP:</b>{" "}
               {detail.hp
                 ? detail.hp
-                : detail.hpByImprovements.map((hp, index) => (
+                : JSON.parse(detail.hpByImprovements).map((hp, index) => (
                     <p key={`hpByImprovements-${index}`}>
                       {hp.hp} ({hp.numImprovements} improvement
                       {hp.numImprovements > 1 ? "s" : ""})
