@@ -10,7 +10,7 @@ const Building = ({ building, age, columnsWidth }) => {
   width = columnsWidth[building.id] * 100; // 100px / item (max items in an age)
   width = width < 200 ? 200 : width;
 
-  // Calculate margins building
+  const icon = building;
 
   return (
     <BuildingContainer
@@ -20,7 +20,8 @@ const Building = ({ building, age, columnsWidth }) => {
     >
       {showBuilding ? (
         <Item
-          image={`../building.png`}
+          image={`../buildings/${building.icon}`}
+          altImage={"../building.png"}
           itemId={building.id}
           name={building.name}
           type={"building"}
@@ -36,6 +37,7 @@ const Building = ({ building, age, columnsWidth }) => {
           <Item
             key={item.id}
             image={`../${item.type}.png`}
+            altImage={`../${item.type}.png`}
             itemId={item.id}
             name={item.name}
             type={item.type}

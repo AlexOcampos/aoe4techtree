@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useItemDetailContext } from "../context/itemdetail_context";
 
-const Item = ({ image, name, type, widthBuilding, itemId }) => {
+const Item = ({ image, altImage, name, type, widthBuilding, itemId }) => {
   const { openItemDetail } = useItemDetailContext();
 
   let bgColor = `var(--clr-item-${type})`;
@@ -26,7 +26,15 @@ const Item = ({ image, name, type, widthBuilding, itemId }) => {
       }}
       onClick={() => openItemDetail(itemId)}
     >
-      <img src={image} alt={name} className={"img-small"} />
+      <img
+        src={image}
+        alt={name}
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = altImage;
+        }}
+        className={"img-small"}
+      />
       <span>{name}</span>
     </ItemContainer>
   );
