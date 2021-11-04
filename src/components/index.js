@@ -11,6 +11,7 @@ import BottomSheetDesc from "./BottomSheetDesc";
 import BottomSheetUnit from "./BottomSheetUnit";
 import BottomSheetTech from "./BottomSheetTech";
 import BottomSheetBuilding from "./BottomSheetBuilding";
+import NavbarTreeMobile from "./NavbarTreeMobile";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   BottomSheetUnit,
   BottomSheetTech,
   BottomSheetBuilding,
+  NavbarTreeMobile,
 };

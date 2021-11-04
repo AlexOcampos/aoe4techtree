@@ -9,10 +9,9 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Coming soon:</b> Mobile friendly, Icons for units and techs, and
-          more...
+          <b>Coming soon:</b> Icons for units and techs, and more...
         </span>
-        <span>Last update: 2021/11/04 14:45 (fix horizontal scroll) </span>
+        <span>Last update: 2021/11/04 19:00 (mobile friendly) </span>
       </div>
       <div className="civs">
         {civilizations.map((civ) => {
@@ -145,7 +144,22 @@ const Wrapper = styled.main`
 
   @media (max-width: 600px) {
     height: 100vh;
+
+    .notification {
+      max-height: 5rem;
+      flex-direction: column;
+
+      span {
+        text-overflow: ellipsis;
+        max-width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0.2rem;
+      }
+    }
+
     .civs {
+      margin-top: 5.2rem;
       height: 80vh;
       grid-template-columns: repeat(1, 1fr);
     }

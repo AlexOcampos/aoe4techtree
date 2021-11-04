@@ -136,6 +136,11 @@ const CivInfoContainer = styled.div`
   p {
     margin-top: 0;
   }
+
+  @media (max-width: 600px) {
+    width: 100vw;
+    height: 92vh;
+  }
 `;
 
 export default CivInfo;

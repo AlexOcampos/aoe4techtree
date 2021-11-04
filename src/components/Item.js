@@ -46,7 +46,7 @@ const ItemContainer = styled.div`
   border: 1px solid #ffffff5c;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
@@ -72,7 +72,7 @@ const ItemContainer = styled.div`
   @media (max-width: 600px) {
     width: 120px;
     height: 80px;
-    margin: 0.05rem;
+    margin: 0.01rem;
 
     img {
       width: 50px;
@@ -85,7 +85,7 @@ const ItemContainer = styled.div`
     }
 
     span {
-      line-height: 34%;
+      line-height: 100%;
     }
   }
 `;

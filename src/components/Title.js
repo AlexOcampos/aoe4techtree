@@ -71,12 +71,14 @@ const TitleContainer = styled.nav`
   }
 
   @media (max-width: 600px) {
-    height: 25%;
-    h1 {
-      font-size: 0.7rem;
-    }
-
     height: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
 
     .title-line {
       height: 8px;

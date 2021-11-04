@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { CivInfo, CivTree, FloatingButton } from "../components";
+import {
+  CivInfo,
+  CivTree,
+  FloatingButton,
+  NavbarTreeMobile,
+} from "../components";
 import { civilizations } from "../data/civs.json";
 import {
   abbasid,
@@ -16,7 +21,7 @@ import {
 import { useItemDetailContext } from "../context/itemdetail_context";
 
 const CivilizationPage = () => {
-  const { updateCiv } = useItemDetailContext();
+  const { updateCiv, navbarTreeMobileSelected } = useItemDetailContext();
   const { id } = useParams();
   const [civTree, setCivTree] = useState({});
 
@@ -56,10 +61,21 @@ const CivilizationPage = () => {
 
   return (
     <Wrapper>
-      <div className="container">
+      <div className="container web">
         <CivInfo civTree={civTree} />
-        <CivTree civTree={civTree} />
+        {
+          /* 2 means we're in mobile */
+          navbarTreeMobileSelected === 2 ? "" : <CivTree civTree={civTree} />
+        }
         <FloatingButton title={"Feedback"} />
+      </div>
+      <div className="mobile">
+        {navbarTreeMobileSelected === 1 ? (
+          <CivInfo civTree={civTree} />
+        ) : (
+          <CivTree civTree={civTree} />
+        )}
+        <NavbarTreeMobile />
       </div>
     </Wrapper>
   );
@@ -75,6 +91,22 @@ const Wrapper = styled.section`
 
   .civ-info::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (max-width: 600px) {
+    .web {
+      display: none;
+    }
+
+    .mobile {
+      width: 100vw;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .mobile {
+      display: none;
+    }
   }
 `;
 export default CivilizationPage;

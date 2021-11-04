@@ -58,6 +58,7 @@ const BottomSheetDescContainer = styled.div`
   margin: 3 rem;
 
   .image {
+    display: none;
     width: 80px;
     height: 80px;
     background-color: rgb(0, 0, 0, 0);
@@ -76,6 +77,10 @@ const BottomSheetDescContainer = styled.div`
   .description > p {
     margin: 0.1rem;
     text-align: left;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
 `;
 

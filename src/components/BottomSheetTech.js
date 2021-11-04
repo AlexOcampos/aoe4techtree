@@ -52,6 +52,15 @@ const BottomSheetBuildingContainer = styled.div`
   .column {
     width: 50%;
   }
+
+  @media (max-width: 600px) {
+    article {
+      flex-direction: column;
+      .column {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export default BottomSheetBuilding;

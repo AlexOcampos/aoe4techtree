@@ -3,6 +3,7 @@ import {
   ITEMDETAIL_CLOSE,
   UPDATE_ITEM,
   CIV_UPDATE,
+  ITEMNAVBARTREEMOB_SELECTED,
 } from "../actions";
 import { stats } from "../data/data_20211101.json";
 
@@ -39,6 +40,11 @@ const itemdetail_reducer = (state, action) => {
   if (action.type === CIV_UPDATE) {
     const { civCode } = action.payload;
     return { ...state, civCode: civCode };
+  }
+
+  if (action.type === ITEMNAVBARTREEMOB_SELECTED) {
+    const { option } = action.payload;
+    return { ...state, navbarTreeMobileSelected: option };
   }
 
   throw new Error(`No Matching "${action.type}" - action type`);

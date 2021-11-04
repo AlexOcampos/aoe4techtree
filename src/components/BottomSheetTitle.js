@@ -13,6 +13,13 @@ const BottomSheetTitle = ({ title }) => {
   );
 };
 
-const BottomSheetTitleContainer = styled.div``;
+const BottomSheetTitleContainer = styled.div`
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+  }
+`;
 
 export default BottomSheetTitle;

@@ -55,8 +55,8 @@ const AboutPage = () => {
               rel="noreferrer"
             >
               this great document
-            </a>
-            who inspired me and help me to make this website.
+            </a>{" "}
+            which inspired me and help me to make this website.
           </p>
         </article>
         <article>

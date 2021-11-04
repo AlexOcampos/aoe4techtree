@@ -5,9 +5,11 @@ import {
   ITEMDETAIL_CLOSE,
   UPDATE_ITEM,
   CIV_UPDATE,
+  ITEMNAVBARTREEMOB_SELECTED,
 } from "../actions";
 
 const initialState = {
+  navbarTreeMobileSelected: 1,
   isItemDetailOpen: false,
   civCode: "",
   itemId: "",
@@ -33,9 +35,20 @@ export const ItemDetailProvider = ({ children }) => {
     dispatch({ type: CIV_UPDATE, payload: { civCode } });
   };
 
+  const updateItemNavbarTreeMobile = (option) => {
+    console.log(`Option selected: ${option}`);
+    dispatch({ type: ITEMNAVBARTREEMOB_SELECTED, payload: { option } });
+  };
+
   return (
     <ItemDetailContext.Provider
-      value={{ ...state, openItemDetail, closeItemDetail, updateCiv }}
+      value={{
+        ...state,
+        openItemDetail,
+        closeItemDetail,
+        updateCiv,
+        updateItemNavbarTreeMobile,
+      }}
     >
       {children}
     </ItemDetailContext.Provider>

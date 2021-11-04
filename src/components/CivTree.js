@@ -270,6 +270,20 @@ const CivTreeContainer = styled.div`
   .scroll-horizontal > div {
     display: block !important;
   }
+
+  @media (max-width: 600px) {
+    width: 100vw;
+    height: 92vh;
+    margin-left: 0;
+
+    .age-header {
+      height: 23vh;
+    }
+
+    .wheel-tooltip {
+      display: none;
+    }
+  }
 `;
 
 export default CivTree;
