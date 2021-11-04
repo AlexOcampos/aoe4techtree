@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState, useEffect } from "react";
 import {
   Building,
   BottomSheetTitle,
@@ -6,7 +7,9 @@ import {
   BottomSheetTech,
   BottomSheetBuilding,
 } from "../components";
-import HorizontalScroll from "react-scroll-horizontal";
+
+import mayus from "../resources/mayus-key.png";
+import "animate.css";
 
 // ItemDetail
 import { BottomSheet } from "react-spring-bottom-sheet";
@@ -46,13 +49,41 @@ const calculateColumnsWidth = (tree) => {
 };
 
 const CivTree = ({ civTree }) => {
+  const [showWheelTooltip, setShowWheelTooltip] = useState(false);
   const { isItemDetailOpen, closeItemDetail, detail } = useItemDetailContext();
   let columnsWidth = calculateColumnsWidth(civTree);
+
+  const onWheelEvent = (e) => {
+    if (!e.shiftKey) {
+      setShowWheelTooltip(true);
+    }
+  };
+
+  useEffect(
+    () => {
+      if (showWheelTooltip) {
+        let timer1 = setTimeout(() => setShowWheelTooltip(false), 1 * 1000);
+        return () => {
+          clearTimeout(timer1);
+        };
+      }
+
+      // this will clear Timeout
+      // when component unmount like in willComponentUnmount
+      // and show will not change to true
+    },
+    // useEffect will run only one time with empty []
+    // if you pass a value to array,
+    // like this - [data]
+    // than clearTimeout will run every time
+    // this value changes (useEffect re-run)
+    [showWheelTooltip]
+  );
 
   return (
     //TODO: refactor in a loop
     <CivTreeContainer>
-      <HorizontalScroll reverseScroll={true}>
+      <div onWheel={onWheelEvent}>
         <div className="row">
           {/* Dark Age */}
           <div className="age-header">
@@ -125,7 +156,7 @@ const CivTree = ({ civTree }) => {
             })}
           </div>
         </div>
-      </HorizontalScroll>
+      </div>
 
       <BottomSheet
         open={isItemDetailOpen}
@@ -161,6 +192,16 @@ const CivTree = ({ civTree }) => {
           <p style={{ color: "black", marginLeft: "3rem" }}>No data</p>
         )}
       </BottomSheet>
+
+      {showWheelTooltip ? (
+        <div className="wheel-tooltip animate__animated animate__fadeInUp">
+          Hold <img src={mayus} alt="mayus" /> to scroll horizontally
+        </div>
+      ) : (
+        <div className="wheel-tooltip animate__animated animate__fadeOutDown">
+          Hold <img src={mayus} alt="mayus" /> to scroll horizontally
+        </div>
+      )}
     </CivTreeContainer>
   );
 };
@@ -168,8 +209,28 @@ const CivTree = ({ civTree }) => {
 const CivTreeContainer = styled.div`
   height: 100vh;
   margin-left: 2rem;
-  width: 70vw;
+  width: 68vw;
   overflow: auto;
+
+  .wheel-tooltip {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    background-color: var(--clr-primary-background-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    color: var(--clr-primary-1);
+
+    img {
+      width: 10rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
   .popup-container {
     color: black;

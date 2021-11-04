@@ -5,6 +5,7 @@
   --clr-primary-gradient: linear-gradient(0deg, #ffedc3 0%, #ffdb88 100%);
   --clr-primary-background: #151825;
   --clr-primary-background-2: rgb(38, 50, 67);
+  --clr-primary-background-3: rgb(0, 0, 0, 0.5);
   --clr-primary-background-gradient: linear-gradient(
     270deg,
     #535443 0%,
