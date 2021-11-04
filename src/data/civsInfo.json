@@ -8601,7 +8601,7 @@
                                 "id": "chivalry",
                                 "name": "chivalry",
                                 "icon": "chivalry.png",
-                                "type": "unit"
+                                "type": "technology"
                             }
                         ]
                     },
@@ -9042,16 +9042,16 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "arbalétrier",
+                                "id": "arbaletrier",
                                 "name": "arbalétrier",
-                                "icon": "arbalétrier.png",
+                                "icon": "arbaletrier.png",
                                 "type": "unit"
                             },
                             {
                                 "id": "gambesons",
                                 "name": "gambesons",
                                 "icon": "gambesons.png",
-                                "type": "unit"
+                                "type": "technology"
                             }
                         ]
                     },
@@ -9504,9 +9504,9 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "elite-arbalétrier",
+                                "id": "elite-arbaletrier",
                                 "name": "elite arbalétrier",
-                                "icon": "elite-arbalétrier.png",
+                                "icon": "elite-arbaletrier.png",
                                 "type": "unit"
                             },
                             {
