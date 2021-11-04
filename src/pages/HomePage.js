@@ -9,10 +9,10 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Coming soon:</b> Icons for units and techs, counter info for
-          military units and more...
+          <b>Coming soon:</b> Mobile friendly, Icons for units and techs, and
+          more...
         </span>
-        <span>Last update: 2021/11/03 19:35</span>
+        <span>Last update: 2021/11/04 14:45 (fix horizontal scroll) </span>
       </div>
       <div className="civs">
         {civilizations.map((civ) => {
