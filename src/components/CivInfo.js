@@ -13,7 +13,7 @@ const CivInfo = ({ civTree }) => {
       <div
         className="bg"
         style={{
-          backgroundImage: `url("../${civTree.image}")`,
+          backgroundImage: `url("../flags/${civTree.image}")`,
           opacity: civTree.civId === 2 ? 0.8 : 0.4,
         }}
       ></div>
