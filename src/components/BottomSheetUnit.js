@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BottomSheetDesc } from "../components";
 
 const BottomSheetUnit = ({ detail }) => {
   let ageFrom;
@@ -13,6 +14,7 @@ const BottomSheetUnit = ({ detail }) => {
   }
   return (
     <BottomSheetUnitContainer>
+      <BottomSheetDesc detail={detail} />
       <article>
         <div className="column">
           <h2>Cost</h2>

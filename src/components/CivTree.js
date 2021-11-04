@@ -161,15 +161,7 @@ const CivTree = ({ civTree }) => {
       <BottomSheet
         open={isItemDetailOpen}
         header={
-          detail ? (
-            <BottomSheetTitle
-              title={detail.customName}
-              description={detail.itemDescription}
-              bonus={detail.bonus}
-            />
-          ) : (
-            "<NO DATA>"
-          )
+          detail ? <BottomSheetTitle title={detail.customName} /> : "<NO DATA>"
         }
         onDismiss={closeItemDetail}
         defaultSnap={({ snapPoints, lastSnap }) =>

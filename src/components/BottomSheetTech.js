@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { BottomSheetDesc } from "../components";
+
 const BottomSheetBuilding = ({ detail }) => {
   let ageFrom;
   if (detail.ageId === "1") {
@@ -13,6 +15,7 @@ const BottomSheetBuilding = ({ detail }) => {
   }
   return (
     <BottomSheetBuildingContainer>
+      <BottomSheetDesc detail={detail} />
       <article>
         <div className="column">
           <h2>Cost</h2>
