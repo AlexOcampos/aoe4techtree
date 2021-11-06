@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Error, Home, About, Civilization } from "./pages/index";
+import { Error, Home, About, Civilization, Leaderboard } from "./pages/index";
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
         </Route>
         <Route exact path="/civilization/:id">
           <Civilization />
+        </Route>
+        <Route exact path="/leaderboard">
+          <Leaderboard />
         </Route>
         <Route exact path="*">
           <Error />

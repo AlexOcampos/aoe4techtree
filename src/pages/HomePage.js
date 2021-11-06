@@ -40,7 +40,10 @@ const ErrorPage = () => {
 
       <Title />
       <div className="footer">
-        <Link to="/about">
+        <Link to="/leaderboard" className="footer-item">
+          <h3>Leaderboard</h3>
+        </Link>
+        <Link to="/about" className="footer-item">
           <h3>About</h3>
         </Link>
       </div>
@@ -122,11 +125,16 @@ const Wrapper = styled.main`
     width: 100vw;
     height: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 
     h3:hover {
       color: var(--clr-primary-1);
+    }
+
+    .footer-item {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 
