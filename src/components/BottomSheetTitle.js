@@ -1,6 +1,10 @@
 import styled from "styled-components";
+import { useItemDetailContext } from "../context/itemdetail_context";
 
-const BottomSheetTitle = ({ title }) => {
+const BottomSheetTitle = ({ detail }) => {
+  const { loadText } = useItemDetailContext();
+  const l18nName = loadText(`${detail.id}_name`);
+  const title = l18nName ? l18nName : detail.customName;
   return (
     <BottomSheetTitleContainer>
       <h1

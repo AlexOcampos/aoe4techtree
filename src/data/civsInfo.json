@@ -12044,9 +12044,9 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "veteran-knight",
-                                "name": "veteran knight",
-                                "icon": "veteran-knight.png",
+                                "id": "knight",
+                                "name": "knight",
+                                "icon": "knight.png",
                                 "type": "unit"
                             },
                             {

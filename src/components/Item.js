@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useItemDetailContext } from "../context/itemdetail_context";
 
 const Item = ({ image, altImage, name, type, widthBuilding, itemId }) => {
-  const { openItemDetail } = useItemDetailContext();
+  const { openItemDetail, loadText } = useItemDetailContext();
 
   let bgColor = `var(--clr-item-${type})`;
   let marginLat = 0.5;
@@ -14,6 +14,13 @@ const Item = ({ image, altImage, name, type, widthBuilding, itemId }) => {
   } else {
     marginLat = 4;
   }
+
+  let l18nName = loadText(`${itemId}_name`);
+  if (!l18nName) {
+    console.log(`Name: ${l18nName} of ${itemId} (fallback: ${name})`);
+  }
+
+  l18nName = l18nName ? l18nName : name;
 
   return (
     <ItemContainer
@@ -28,14 +35,15 @@ const Item = ({ image, altImage, name, type, widthBuilding, itemId }) => {
     >
       <img
         src={image}
-        alt={name}
+        alt={l18nName}
         onError={(e) => {
           e.target.onerror = null;
           e.target.src = altImage;
         }}
         className={"img-small"}
       />
-      <span>{name}</span>
+
+      <span>{l18nName}</span>
     </ItemContainer>
   );
 };

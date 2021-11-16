@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { useItemDetailContext } from "../context/itemdetail_context";
 
 const BottomSheetDesc = ({ detail }) => {
+  const { loadText, civCode } = useItemDetailContext();
   const paramExpresion = /(\%\d%)/gi;
 
-  let descCompleted = detail.itemDescription;
+  let descCompleted = loadText(`${detail.id}_${civCode}_itemDescription`);
 
   const placeholders = descCompleted.match(paramExpresion);
   if (placeholders && detail.bonus) {
@@ -44,7 +46,7 @@ const BottomSheetDesc = ({ detail }) => {
     <BottomSheetDescContainer>
       <div className="image"></div>
       <div className="description">
-        {descCompleted.split("\\r\\n").map((desc, i) => (
+        {descCompleted.split("\r\n").map((desc, i) => (
           <p key={`itemDesc-${i}`}>{desc}</p>
         ))}
       </div>

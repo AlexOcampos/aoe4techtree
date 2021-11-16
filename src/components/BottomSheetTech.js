@@ -1,38 +1,81 @@
 import styled from "styled-components";
-
 import { BottomSheetDesc } from "../components";
+import { useItemDetailContext } from "../context/itemdetail_context";
 
 const BottomSheetBuilding = ({ detail }) => {
-  let ageFrom;
-  if (detail.ageId === "1") {
-    ageFrom = "I (Dark Age)";
-  } else if (detail.ageId === "2") {
-    ageFrom = "II (Feudal Age)";
-  } else if (detail.ageId === "3") {
-    ageFrom = "III (Castle Age)";
-  } else {
-    ageFrom = "IV (Imperial Age)";
-  }
+  const { loadText } = useItemDetailContext();
+  let ageFrom = loadText(`age-${detail.ageId}`);
+
   return (
     <BottomSheetBuildingContainer>
       <BottomSheetDesc detail={detail} />
       <article>
         <div className="column">
-          <h2>Cost</h2>
-          {detail.food && detail.food > 0 ? <p>Food: {detail.food}</p> : ""}
-          {detail.wood && detail.wood > 0 ? <p>Wood: {detail.wood}</p> : ""}
-          {detail.gold && detail.gold > 0 ? <p>Gold: {detail.gold}</p> : ""}
-          {detail.stone && detail.stone > 0 ? <p>Stone: {detail.stone}</p> : ""}
-          {detail.time ? <p>Time: {detail.time} sg</p> : ""}
+          <h2>{loadText("cost_detail_title")}</h2>
+          {detail.food && detail.food > 0 ? (
+            <p>
+              {loadText("food_resource_name")}: {detail.food}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.wood && detail.wood > 0 ? (
+            <p>
+              {loadText("wood_resource_name")}: {detail.wood}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.gold && detail.gold > 0 ? (
+            <p>
+              {loadText("gold_resource_name")}: {detail.gold}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.stone && detail.stone > 0 ? (
+            <p>
+              {loadText("stone_resource_name")}: {detail.stone}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.time ? (
+            <p>
+              {loadText("time_resource_name")}: {detail.time}{" "}
+              {loadText("seconds_resource_name")}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.costByAge
+            ? JSON.parse(detail.costByAge).map((age, index) => (
+                <p key={`costbyage-${index}`}>
+                  {loadText("age_name")}: {age.age} -{" "}
+                  {age.cost.food && age.cost.food > 0
+                    ? `${loadText("food_resource_name")}: ${age.cost.food}  `
+                    : ""}
+                  {age.cost.wood && age.cost.wood > 0
+                    ? `${loadText("wood_resource_name")}: ${age.cost.wood}  `
+                    : ""}
+                  {age.cost.gold && age.cost.gold > 0
+                    ? `${loadText("gold_resource_name")}: ${age.cost.gold}  `
+                    : ""}
+                  {age.cost.stone && age.cost.stone > 0
+                    ? `${loadText("stone_resource_name")}: ${age.cost.stone}  `
+                    : ""}
+                </p>
+              ))
+            : ""}
         </div>
         <div className="column">
-          <h2>Basic Info</h2>
-          <p>{detail.genre}</p>
+          <h2>{loadText("basic-info_detail_title")}</h2>
+          <p>{loadText(detail.genre)}</p>
           <p>
-            {detail.class} - {detail.type}
+            {loadText(detail.class)} - {loadText(detail.type)}
           </p>
           <p>
-            <b>Age:</b> {ageFrom}
+            <b>{loadText("age_name")}:</b> {ageFrom}
           </p>
         </div>
       </article>

@@ -160,9 +160,7 @@ const CivTree = ({ civTree }) => {
 
       <BottomSheet
         open={isItemDetailOpen}
-        header={
-          detail ? <BottomSheetTitle title={detail.customName} /> : "<NO DATA>"
-        }
+        header={detail ? <BottomSheetTitle detail={detail} /> : "<NO DATA>"}
         onDismiss={closeItemDetail}
         defaultSnap={({ snapPoints, lastSnap }) =>
           lastSnap ?? Math.min(...snapPoints)
@@ -173,9 +171,9 @@ const CivTree = ({ civTree }) => {
         ]}
       >
         {detail && detail.genre ? (
-          detail.genre === "Tech." ? (
+          detail.genre === "genre_tech" ? (
             <BottomSheetTech detail={detail} />
-          ) : detail.genre === "Structure" ? (
+          ) : detail.genre === "genre_structure" ? (
             <BottomSheetBuilding detail={detail} />
           ) : (
             <BottomSheetUnit detail={detail} />

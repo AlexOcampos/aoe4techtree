@@ -8,12 +8,20 @@ import {
   ITEMNAVBARTREEMOB_SELECTED,
 } from "../actions";
 
+const defaultLang = "en";
+const languages = {
+  en: require("../data/locales/en/strings.json"),
+  jp: require("../data/locales/jp/strings.json"),
+};
+
 const initialState = {
   navbarTreeMobileSelected: 1,
   isItemDetailOpen: false,
   civCode: "",
   itemId: "",
   detail: {},
+  lang: "en",
+  localeData: languages[defaultLang],
 };
 
 const ItemDetailContext = React.createContext();
@@ -31,13 +39,16 @@ export const ItemDetailProvider = ({ children }) => {
   };
 
   const updateCiv = (civCode) => {
-    console.log(`Civ detail: ${civCode}`);
     dispatch({ type: CIV_UPDATE, payload: { civCode } });
   };
 
   const updateItemNavbarTreeMobile = (option) => {
-    console.log(`Option selected: ${option}`);
     dispatch({ type: ITEMNAVBARTREEMOB_SELECTED, payload: { option } });
+  };
+
+  const loadText = (id) => {
+    const translations = languages[defaultLang];
+    return translations[id];
   };
 
   return (
@@ -48,6 +59,7 @@ export const ItemDetailProvider = ({ children }) => {
         closeItemDetail,
         updateCiv,
         updateItemNavbarTreeMobile,
+        loadText,
       }}
     >
       {children}
