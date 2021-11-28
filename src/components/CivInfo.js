@@ -67,6 +67,10 @@ const CivInfoContainer = styled.div`
     rgba(37, 48, 66, 0.2) 100%
   );
 
+  @media (min-width: 1920px) {
+    width: 580px;
+  }
+
   position: relative;
   z-index: 1;
 

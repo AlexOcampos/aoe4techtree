@@ -63,6 +63,9 @@ const RoadmapPage = () => {
                 .
               </p>
             </li>
+            <li>
+              <b>Other minor fixes and visual improvements</b>
+            </li>
           </ul>
         </section>
         <section>

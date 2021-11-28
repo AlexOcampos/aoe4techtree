@@ -282,6 +282,13 @@ const CivTreeContainer = styled.div`
       display: none;
     }
   }
+
+  @media (min-width: 1920px) {
+    height: 100vh;
+    margin-left: 2rem;
+    width: 80vw;
+    overflow: auto;
+  }
 `;
 
 export default CivTree;
