@@ -1,22 +1,30 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Title = () => {
+const Title = ({ margin }) => {
+  var marginTop = margin ? margin : "4rem";
+  var marginBottom = margin ? margin : "4rem";
+  console.log(`marginTop: ${marginTop}`);
   return (
-    <TitleContainer>
-      <Link to="/">
-        <div className="title-line"></div>
-        <h1>AoE4 Tech Tree</h1>
-        <div className="title-line"></div>
-      </Link>
+    <TitleContainer
+      style={{
+        marginTop: marginTop,
+        marginBottom: marginBottom,
+      }}
+    >
+      <div className="container">
+        <Link to="/">
+          <div className="title-line"></div>
+          <h1>AoE4 Tech Tree</h1>
+          <div className="title-line"></div>
+        </Link>
+      </div>
     </TitleContainer>
   );
 };
 
 const TitleContainer = styled.nav`
   width: 100vw;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   height: 8rem;
 
   display: flex;

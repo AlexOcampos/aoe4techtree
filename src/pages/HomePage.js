@@ -9,9 +9,12 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Coming soon:</b> Icons for units and techs, and more...
+          <b>Last update:</b> 2021/11/28 23:00 (icons for buildings and techs,
+          nightbot,...){" "}
+          <Link to={"/roadmap"} className="link">
+            <b>[see more details]</b>
+          </Link>
         </span>
-        <span>Last update: 2021/11/04 19:00 (mobile friendly) </span>
       </div>
       <div className="civs">
         {civilizations.map((civ) => {
@@ -40,8 +43,8 @@ const ErrorPage = () => {
 
       <Title />
       <div className="footer">
-        <Link to="/leaderboard" className="footer-item">
-          <h3>Leaderboard</h3>
+        <Link to="/nightbot" className="footer-item">
+          <h3>Nightbot</h3>
         </Link>
         <Link to="/about" className="footer-item">
           <h3>About</h3>
@@ -64,9 +67,18 @@ const Wrapper = styled.main`
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: var(--clr-primary-2);
+    background-color: #3cc742;
     display: flex;
     justify-content: space-evenly;
+    color: #000000;
+  }
+
+  .link {
+    color: #efdf4e;
+  }
+
+  .link:hover {
+    color: #1764a1;
   }
 
   .civs {
@@ -158,10 +170,10 @@ const Wrapper = styled.main`
       flex-direction: column;
 
       span {
-        text-overflow: ellipsis;
+        /*text-overflow: ellipsis;
         max-width: 100vw;
+        white-space: nowrap;*/
         overflow: hidden;
-        white-space: nowrap;
         margin: 0.2rem;
       }
     }

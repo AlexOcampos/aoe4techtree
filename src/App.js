@@ -1,6 +1,13 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Error, Home, About, Civilization, Leaderboard } from "./pages/index";
+import {
+  Error,
+  Home,
+  About,
+  Civilization,
+  Nightbot,
+  Roadmap,
+} from "./pages/index";
 
 function App() {
   return (
@@ -15,8 +22,11 @@ function App() {
         <Route exact path="/civilization/:id">
           <Civilization />
         </Route>
-        <Route exact path="/leaderboard">
-          <Leaderboard />
+        <Route exact path="/nightbot">
+          <Nightbot />
+        </Route>
+        <Route exact path="/roadmap">
+          <Roadmap />
         </Route>
         <Route exact path="*">
           <Error />
