@@ -39,6 +39,7 @@ const Item = ({ image, altImage, name, type, widthBuilding, itemId }) => {
         onError={(e) => {
           e.target.onerror = null;
           e.target.src = altImage;
+          console.log(`Missing picture: ${image}`);
         }}
         className={"img-small"}
       />

@@ -7430,9 +7430,9 @@
                                 "type": "technology"
                             },
                             {
-                                "id": "two-handed-weapons",
+                                "id": "two-handed-weapon",
                                 "name": "two-handed weapons",
-                                "icon": "two-handed-weapons.png",
+                                "icon": "two-handed-weapon.png",
                                 "type": "technology"
                             }
                         ]

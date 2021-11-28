@@ -33,10 +33,16 @@ const Building = ({ building, age, columnsWidth }) => {
       )}
 
       {building.items.map((item) => {
+        var folder = "";
+        if (item.type === "technology") {
+          folder = "technologies/";
+        } else {
+          folder = "units/";
+        }
         return (
           <Item
             key={item.id}
-            image={`../${item.type}.png`}
+            image={`../${folder}${item.icon}`}
             altImage={`../${item.type}.png`}
             itemId={item.id}
             name={item.name}
