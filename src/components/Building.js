@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Item } from "../components";
+import { urlStatic } from "../utils/constants";
 
 const Building = ({ building, age, columnsWidth }) => {
   const showBuilding = building.availableAge === age;
@@ -20,8 +21,8 @@ const Building = ({ building, age, columnsWidth }) => {
     >
       {showBuilding ? (
         <Item
-          image={`../buildings/${building.icon}`}
-          altImage={"../building.png"}
+          image={`${urlStatic}/buildings/${building.icon}`}
+          altImage={`${urlStatic}/building.png`}
           itemId={building.id}
           name={building.name}
           type={"building"}
@@ -42,8 +43,8 @@ const Building = ({ building, age, columnsWidth }) => {
         return (
           <Item
             key={item.id}
-            image={`../${folder}${item.icon}`}
-            altImage={`../${item.type}.png`}
+            image={`${urlStatic}/${folder}${item.icon}`}
+            altImage={`${urlStatic}/${item.type}.png`}
             itemId={item.id}
             name={item.name}
             type={item.type}

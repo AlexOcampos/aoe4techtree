@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../components";
+import { urlStatic } from "../utils/constants";
+
 const NightbotPage = () => {
   return (
     <Wrapper className="">
@@ -19,13 +21,13 @@ const NightbotPage = () => {
         </div>
         <img
           className="configuration-image"
-          src="../nightbot/configuration.png"
+          src={`${urlStatic}/nightbot/configuration.png`}
           alt=""
         />
         <p>Now you have your command ready:</p>
         <img
           className="configuration-image"
-          src="../nightbot/example.png"
+          src={`${urlStatic}/nightbot/example.png`}
           alt=""
         />
         <p>Enjoy!</p>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
+import { urlStatic } from "../utils/constants";
 
 const CivInfo = ({ civTree }) => {
   return (
@@ -13,7 +14,7 @@ const CivInfo = ({ civTree }) => {
       <div
         className="bg"
         style={{
-          backgroundImage: `url("../flags/${civTree.image}")`,
+          backgroundImage: `url("${urlStatic}/flags/${civTree.image}")`,
           opacity: civTree.civId === 2 ? 0.8 : 0.4,
         }}
       ></div>

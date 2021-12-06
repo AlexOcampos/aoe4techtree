@@ -4,64 +4,64 @@
             "id": 2,
             "codeName": "AB",
             "name": "Abbasid Dinasty",
-            "image": "./flags/flag_abbasid.png",
-            "imageSmall": "./flags/flag_abbasid_small.png",
+            "image": "/flags/flag_abbasid.png",
+            "imageSmall": "/flags/flag_abbasid_small.png",
             "civInfo": "abbasid"
         },
         {
             "id": 1,
             "codeName": "CH",
             "name": "Chinese",
-            "image": "./flags/flag_chinese.png",
-            "imageSmall": "./flags/flag_chinese_small.png",
+            "image": "/flags/flag_chinese.png",
+            "imageSmall": "/flags/flag_chinese_small.png",
             "civInfo": "chinese"
         },
         {
             "id": 5,
             "codeName": "HR",
             "name": "Holy Roman Empire",
-            "image": "./flags/flag_hre.png",
-            "imageSmall": "./flags/flag_hre_small.png",
+            "image": "/flags/flag_hre.png",
+            "imageSmall": "/flags/flag_hre_small.png",
             "civInfo": "hre"
         },
         {
             "id": 3,
             "codeName": "EN",
             "name": "English",
-            "image": "./flags/flag_english.png",
-            "imageSmall": "./flags/flag_english_small.png",
+            "image": "/flags/flag_english.png",
+            "imageSmall": "/flags/flag_english_small.png",
             "civInfo": "english"
         },
         {
             "id": 8,
             "name": "Delhi Sultanate",
             "codeName": "DE",
-            "image": "./flags/flag_sultanates.png",
-            "imageSmall": "./flags/flag_sultanates_small.png",
+            "image": "/flags/flag_sultanates.png",
+            "imageSmall": "/flags/flag_sultanates_small.png",
             "civInfo": "delhi"
         },
         {
             "id": 4,
             "codeName": "FR",
             "name": "French",
-            "image": "./flags/flag_french.png",
-            "imageSmall": "./flags/flag_french_small.png",
+            "image": "/flags/flag_french.png",
+            "imageSmall": "/flags/flag_french_small.png",
             "civInfo": "french"
         },
         {
             "id": 6,
             "codeName": "MO",
             "name": "Mongol",
-            "image": "./flags/flag_mongol.png",
-            "imageSmall": "./flags/flag_mongol_small.png",
+            "image": "/flags/flag_mongol.png",
+            "imageSmall": "/flags/flag_mongol_small.png",
             "civInfo": "mongol"
         },
         {
             "id": 7,
             "codeName": "RU",
             "name": "Rus",
-            "image": "./flags/flag_rus.png",
-            "imageSmall": "./flags/flag_rus_small.png",
+            "image": "/flags/flag_rus.png",
+            "imageSmall": "/flags/flag_rus_small.png",
             "civInfo": "rus"
         }
     ]

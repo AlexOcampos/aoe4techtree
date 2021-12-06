@@ -3,13 +3,14 @@ import { Title } from "../components";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { civilizations } from "../data/civs.json";
+import { urlStatic } from "../utils/constants";
 
 const ErrorPage = () => {
   return (
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Last update:</b> 2021/11/29 00:45 (icons for buildings and techs,
+          <b>Last update:</b> 2021/12/06 11:01 (icons for buildings and techs,
           nightbot,...){" "}
           <Link to={"/roadmap"} className="link">
             <b>[see more details]</b>
@@ -25,7 +26,7 @@ const ErrorPage = () => {
                   <div className="overlay" style={{ opacity: 1 }}>
                     <span className="civName">Coming soon</span>
                   </div>
-                  <img src={civ.imageSmall} alt={civ.name} />
+                  <img src={`${urlStatic}${civ.imageSmall}`} alt={civ.name} />
                 </div>
               ) : (
                 <Link to={`/civilization/${civ.id}`}>
@@ -33,7 +34,7 @@ const ErrorPage = () => {
                     <span className="civName">{civ.name}</span>
                   </div>
 
-                  <img src={civ.imageSmall} alt={civ.name} />
+                  <img src={`${urlStatic}${civ.imageSmall}`} alt={civ.name} />
                 </Link>
               )}
             </article>

@@ -9,6 +9,28 @@ const RoadmapPage = () => {
       <div className="roadmap-container">
         <section>
           <h1>Releases</h1>
+          <h3>1.1.1 - 06/Dic/2021</h3>
+          <ul>
+            <li>
+              <b>Move images to a static server</b>
+              <p>
+                The webpage is hosted on a Netlify free account. I didn't expect
+                this success (thanks for your support!) so I put all the
+                resources in the same server. Netlify free account has a
+                bandwidth limit of 100GB/month and I'm going over the limit, so
+                I move all the images to a{" "}
+                <a
+                  target="_blank"
+                  href="https://github.com/AlexOcampos/aoe4treetechstatic"
+                  rel="noreferrer"
+                  className="ext-link"
+                >
+                  githubpages project
+                </a>
+                .
+              </p>
+            </li>
+          </ul>
           <h3>1.1.0 - 28/Nov/2021</h3>
           <ul>
             <li>

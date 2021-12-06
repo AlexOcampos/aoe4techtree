@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { urlStatic } from "../utils/constants";
 
 const Title = ({ margin }) => {
   var marginTop = margin ? margin : "4rem";
@@ -10,6 +11,7 @@ const Title = ({ margin }) => {
       style={{
         marginTop: marginTop,
         marginBottom: marginBottom,
+        backgroundImage: `url("${urlStatic}/title-bg.jpg")`,
       }}
     >
       <div className="container">
@@ -31,7 +33,7 @@ const TitleContainer = styled.nav`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("../title-bg.jpg");
+
   background-repeat: no-repeat;
   background-size: 100%;
 

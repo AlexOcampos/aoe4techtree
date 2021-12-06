@@ -1,6 +1,7 @@
 import React from "react";
 import { Title } from "../components";
 import styled from "styled-components";
+import { urlStatic } from "../utils/constants";
 
 const AboutPage = () => {
   return (
@@ -30,7 +31,11 @@ const AboutPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="support-logo" src="./bmc-logo.png" alt="" />
+              <img
+                className="support-logo"
+                src={`${urlStatic}/bmc-logo.png`}
+                alt=""
+              />
             </a>
           </div>
         </article>
