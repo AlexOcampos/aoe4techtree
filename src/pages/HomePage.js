@@ -10,8 +10,7 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Last update:</b> 2021/12/06 11:01 (icons for buildings and techs,
-          nightbot,...){" "}
+          <b>Last update:</b> 2021/12/17 19:01 (buymeacoffe widget,...){" "}
           <Link to={"/roadmap"} className="link">
             <b>[see more details]</b>
           </Link>

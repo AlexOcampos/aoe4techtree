@@ -9,6 +9,27 @@ const RoadmapPage = () => {
       <div className="roadmap-container">
         <section>
           <h1>Releases</h1>
+          <h3>1.1.2 - 17/Dic/2021</h3>
+          <ul>
+            <li>
+              <b>BuyMeACoffe widget</b>
+              <p>
+                I added a widget to receive support. As you know the website has
+                several expenses (server, domain, ...). Due to the success of
+                the page last month I receive an unexpected bill from the server
+                provider (we exceed the bandwidth rate). I made the 1.1.1
+                version to avoid this in the future, but I have to pay the bill
+                anyway this month. I hope with your help to keep the project
+                alive.
+              </p>
+              <p>Also, everyone is kinder at Christmas :D</p>
+              <p>
+                I have not worked on this project to earn money, but if you
+                think the time I have invested worth it, buy me a coffee to keep
+                me awake working!
+              </p>
+            </li>
+          </ul>
           <h3>1.1.1 - 06/Dic/2021</h3>
           <ul>
             <li>
