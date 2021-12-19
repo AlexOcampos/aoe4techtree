@@ -21,9 +21,20 @@ import {
 import { useItemDetailContext } from "../context/itemdetail_context";
 
 const CivilizationPage = () => {
-  const { updateCiv, navbarTreeMobileSelected } = useItemDetailContext();
-  const { id } = useParams();
+  const { updateCiv, navbarTreeMobileSelected, changeLocale } =
+    useItemDetailContext();
+  const { id, lang } = useParams();
   const [civTree, setCivTree] = useState({});
+
+  useEffect(() => {
+    if (lang) {
+      console.log(`Lang is ${lang}`);
+      changeLocale(lang);
+    } else {
+      console.log(`Use default lang`);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang]);
 
   useEffect(() => {
     const civilization = civilizations.filter((civ) => civ.id === parseInt(id));
@@ -48,11 +59,13 @@ const CivilizationPage = () => {
         setCivTree(rus);
       }
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   useEffect(() => {
     console.log(`going to update civ: ${civTree.codeName}`);
     updateCiv(civTree.codeName);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [civTree]);
 
   if (!civTree.civId) {

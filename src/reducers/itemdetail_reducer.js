@@ -4,6 +4,7 @@ import {
   UPDATE_ITEM,
   CIV_UPDATE,
   ITEMNAVBARTREEMOB_SELECTED,
+  CHANGE_LOCALE,
 } from "../actions";
 import { stats } from "../data/data_20211101.json";
 
@@ -23,7 +24,7 @@ const itemdetail_reducer = (state, action) => {
         if (item[`${state.civCode.toLowerCase()}`] && item["id"] === itemId) {
           return item;
         }
-        return;
+        return undefined;
       });
 
       if (itemStats && itemStats.length > 0) {
@@ -45,6 +46,11 @@ const itemdetail_reducer = (state, action) => {
   if (action.type === ITEMNAVBARTREEMOB_SELECTED) {
     const { option } = action.payload;
     return { ...state, navbarTreeMobileSelected: option };
+  }
+
+  if (action.type === CHANGE_LOCALE) {
+    const { lang } = action.payload;
+    return { ...state, lang: lang };
   }
 
   throw new Error(`No Matching "${action.type}" - action type`);

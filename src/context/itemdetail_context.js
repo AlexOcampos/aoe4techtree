@@ -6,12 +6,14 @@ import {
   UPDATE_ITEM,
   CIV_UPDATE,
   ITEMNAVBARTREEMOB_SELECTED,
+  CHANGE_LOCALE,
 } from "../actions";
 
-const defaultLang = "en";
+const defaultLang = "cn";
 const languages = {
   en: require("../data/locales/en/strings.json"),
   jp: require("../data/locales/jp/strings.json"),
+  cn: require("../data/locales/cn/strings.json"),
 };
 
 const initialState = {
@@ -47,8 +49,14 @@ export const ItemDetailProvider = ({ children }) => {
   };
 
   const loadText = (id) => {
-    const translations = languages[defaultLang];
+    const translations = languages[state.lang];
     return translations[id];
+  };
+
+  const changeLocale = (lang) => {
+    if (lang && languages[lang]) {
+      dispatch({ type: CHANGE_LOCALE, payload: { lang } });
+    }
   };
 
   return (
@@ -60,6 +68,7 @@ export const ItemDetailProvider = ({ children }) => {
         updateCiv,
         updateItemNavbarTreeMobile,
         loadText,
+        changeLocale,
       }}
     >
       {children}

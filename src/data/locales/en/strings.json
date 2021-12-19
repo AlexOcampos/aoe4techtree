@@ -1645,7 +1645,7 @@
     "greased-axles_DE_itemClassification": "Siege Technology",
     "greased-axles_DE_itemDescription": "Increase the movement speed of siege engines by +%1%%%.",
     "grand-bazaar_AB_itemClassification": "Trade Technology",
-    "grand-bazaar_AB_itemDescription": "Traders also return with a secondary resource. This resource is %1%%% the base Gold value and is set at the market.",
+    "grand-bazaar_AB_itemDescription": "Traders and Trade Ships also return with a secondary resource. This resource is %1%%% the base Gold value and is set at the market.",
     "granary_CH_itemClassification": "Economy Building",
     "granary_CH_itemDescription": "Villagers can drop off Food at this building. Improves the Farm gather rate of nearby Villagers by +%1%%% (stacks with other Granaries). Generates tax each time a resource is dropped off.",
     "ger_MO_itemClassification": "Economy Building",

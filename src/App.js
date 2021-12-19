@@ -22,6 +22,9 @@ function App() {
         <Route exact path="/civilization/:id">
           <Civilization />
         </Route>
+        <Route exact path="/civilization/:id/lang/:lang">
+          <Civilization />
+        </Route>
         <Route exact path="/nightbot">
           <Nightbot />
         </Route>
