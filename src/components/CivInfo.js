@@ -1,15 +1,77 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import { urlStatic } from "../utils/constants";
+import Select from "react-select";
+import { useItemDetailContext } from "../context/itemdetail_context";
+import { civilizations } from "../data/civs.json";
 
 const CivInfo = ({ civTree }) => {
+  const { changeLocale, lang, civCode } = useItemDetailContext();
+  let history = useHistory();
+
+  const languages = [
+    { label: "english", value: "en" },
+    { label: "chinese", value: "zh" },
+  ];
+
+  const handleLanguageChange = (selectedLang) => {
+    changeLocale(selectedLang.value);
+
+    const civilization = civilizations.filter(
+      (civ) => civ.codeName === civCode
+    );
+    history.push(
+      `/civilization/${civilization[0].id}/lang/${selectedLang.value}`
+    );
+  };
+
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderBottom: "1px dotted var(--clr-grey-5)",
+      color: state.isSelected ? "var(--clr-primary-1)" : "var(--clr-white)",
+      padding: 4,
+      backgroundColor: "var(--clr-primary-background)",
+    }),
+    control: () => ({
+      // none of react-select's styles are passed to <Control />
+      width: 120,
+      minHeight: "38px",
+      borderRadius: "4px",
+      borderStyle: "solid",
+      borderWidth: "1px",
+      borderColor: "var(--clr-white)",
+      display: "flex",
+    }),
+    singleValue: (provided, state) => {
+      const opacity = state.isDisabled ? 0.5 : 1;
+      const transition = "opacity 300ms";
+      const color = "white";
+
+      return { ...provided, opacity, transition, color };
+    },
+    menuList: () => ({
+      backgroundColor: "var(--clr-primary-background)",
+      borderRadius: "8px",
+      borderStyle: "solid",
+      borderWidth: "1px",
+      borderColor: "var(--clr-white)",
+    }),
+  };
+
   return (
     <CivInfoContainer className="civ-info">
       <nav>
         <Link to={"/"}>
           <HiMenu /> AoE4 Tech Tree
         </Link>
+        {/* <Select
+          options={languages}
+          defaultValue={languages.filter((l) => l.value === lang)}
+          onChange={handleLanguageChange}
+          styles={customStyles}
+        /> */}
       </nav>
       <div
         className="bg"
@@ -77,6 +139,16 @@ const CivInfoContainer = styled.div`
 
   nav {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28vw;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      width: 90vw;
+    }
   }
 
   nav > * {
@@ -92,7 +164,7 @@ const CivInfoContainer = styled.div`
   .bg {
     position: absolute;
     z-index: -1;
-    top: 3rem;
+    top: 3.8rem;
     bottom: 0;
     left: 0;
     right: 0;

@@ -28,10 +28,7 @@ const CivilizationPage = () => {
 
   useEffect(() => {
     if (lang) {
-      console.log(`Lang is ${lang}`);
       changeLocale(lang);
-    } else {
-      console.log(`Use default lang`);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]);

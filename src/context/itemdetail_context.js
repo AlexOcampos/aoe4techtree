@@ -12,8 +12,7 @@ import {
 const defaultLang = "cn";
 const languages = {
   en: require("../data/locales/en/strings.json"),
-  jp: require("../data/locales/jp/strings.json"),
-  cn: require("../data/locales/cn/strings.json"),
+  zh: require("../data/locales/zh/strings.json"),
 };
 
 const initialState = {
