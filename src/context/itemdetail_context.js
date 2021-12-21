@@ -12,6 +12,7 @@ import {
 const defaultLang = "cn";
 const languages = {
   en: require("../data/locales/en/strings.json"),
+  vi: require("../data/locales/vi/strings.json"),
   zh: require("../data/locales/zh/strings.json"),
 };
 

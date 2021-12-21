@@ -13,6 +13,7 @@ const CivInfo = ({ civTree }) => {
   const languages = [
     { label: "english", value: "en" },
     { label: "chinese", value: "zh" },
+    { label: "vietnamese", value: "vi" },
   ];
 
   const handleLanguageChange = (selectedLang) => {
