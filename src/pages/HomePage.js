@@ -10,7 +10,7 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Last update:</b> 2021/12/17 19:01 (buymeacoffe widget,...){" "}
+          <b>Last update:</b> 2021/12/22 19:00 (unit icons,...){" "}
           <Link to={"/roadmap"} className="link">
             <b>[see more details]</b>
           </Link>
@@ -67,7 +67,7 @@ const Wrapper = styled.main`
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: #3cc742;
+    background-color: #00bcd4;
     display: flex;
     justify-content: space-evenly;
     color: #000000;

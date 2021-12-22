@@ -9,6 +9,24 @@ const RoadmapPage = () => {
       <div className="roadmap-container">
         <section>
           <h1>Releases</h1>
+          <h3>1.1.3 - 22/Dic/2021</h3>
+          <ul>
+            <li>
+              <b>Unit icons</b>
+              <p>
+                Finally, thanks to{" "}
+                <a
+                  href="https://discordapp.com/users/ipieren#5351"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ext-link"
+                >
+                  Mayank Apte
+                </a>{" "}
+                we have the unit icons (and all the icons!) on the web.
+              </p>
+            </li>
+          </ul>
           <h3>1.1.2 - 17/Dic/2021</h3>
           <ul>
             <li>
