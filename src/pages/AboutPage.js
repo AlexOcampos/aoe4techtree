@@ -63,6 +63,17 @@ const AboutPage = () => {
             </a>{" "}
             which inspired me and help me to make this website.
           </p>
+          <p>
+            Thanks to{" "}
+            <a
+              href="https://discordapp.com/users/ipieren#5351"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mayank Apte
+            </a>{" "}
+            for helping me with the unit icons nighmare.
+          </p>
         </article>
         <article>
           <p>
