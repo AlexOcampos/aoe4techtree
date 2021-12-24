@@ -7,7 +7,7 @@ import { useItemDetailContext } from "../context/itemdetail_context";
 import { civilizations } from "../data/civs.json";
 
 const CivInfo = ({ civTree }) => {
-  const { changeLocale, lang, civCode } = useItemDetailContext();
+  const { changeLocale, lang, civCode, loadText } = useItemDetailContext();
   let history = useHistory();
 
   const languages = [
@@ -61,6 +61,18 @@ const CivInfo = ({ civTree }) => {
     }),
   };
 
+  let civName = civTree.civName;
+  let shortDesc = civTree.shortDesc;
+  let longDesc = civTree.longDesc;
+
+  let l18nName = loadText(`civName_${civCode}`);
+  let l18nShortDesc = loadText(`civShortDesc_${civCode}`);
+  let l18nLongDesc = loadText(`civLongDesc_${civCode}`);
+
+  civName = l18nName ? l18nName : civName;
+  shortDesc = l18nShortDesc ? l18nShortDesc : shortDesc;
+  longDesc = l18nLongDesc ? l18nLongDesc : longDesc;
+
   return (
     <CivInfoContainer className="civ-info">
       <nav>
@@ -83,25 +95,45 @@ const CivInfo = ({ civTree }) => {
       ></div>
       <header>
         {civTree.civId ? (
-          <h1 style={{ marginBottom: 0, marginTop: 0 }}>{civTree.civName}</h1>
+          <h1 style={{ marginBottom: 0, marginTop: 0 }}>{civName}</h1>
         ) : (
-          <h1>{civTree.civName}</h1>
+          <h1>{civName}</h1>
         )}
-        <h2>{civTree.shortDesc}</h2>
-        <p>{civTree.longDesc}</p>
+        <h2>{shortDesc}</h2>
+        <p>{longDesc}</p>
       </header>
 
       <div className="civ-explanation">
         {civTree.infoAndBonus.map((info, infoIndex) => {
+          let title = info.title;
+          let description = info.description;
+
+          let l18nTitle = loadText(
+            `infoAndBonus_${civCode}_${infoIndex}_title`
+          );
+          let l18nDescription = loadText(
+            `infoAndBonus_${civCode}_${infoIndex}_description`
+          );
+
+          title = l18nTitle ? l18nTitle : title;
+          description = l18nDescription ? l18nDescription : title;
+
           return (
             <article key={`info-${infoIndex}`}>
-              <h3>{info.title}</h3>
-              {info.description ? <p>{info.description}</p> : ""}
+              <h3>{title}</h3>
+              {description ? <p>{description}</p> : ""}
               {info.list ? (
                 <ul>
-                  {info.list.map((li, index) => (
-                    <li key={`info-${infoIndex}-${index}`}>{li}</li>
-                  ))}
+                  {info.list.map((li, index) => {
+                    let item = li;
+
+                    let l18nItem = loadText(
+                      `infoAndBonus_${civCode}_${infoIndex}_list_${index}`
+                    );
+                    item = l18nItem ? l18nItem : item;
+
+                    return <li key={`info-${infoIndex}-${index}`}>{item}</li>;
+                  })}
                 </ul>
               ) : (
                 ""

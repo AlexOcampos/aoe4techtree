@@ -4747,8 +4747,8 @@
     },
     "chinese": {
         "civId": 1,
-        "civName": "chinese",
         "codeName": "CH",
+        "civName": "chinese",
         "shortDesc": "DYNASTIES, GUNPOWDER, EXPANSION",
         "longDesc": "The Chinese can shift their focus across the ages, deploying many unique units and building rapidly. Enemies must continually adapt if they want to keep up.",
         "image": "flag_chinese.png",
