@@ -116,7 +116,7 @@ const CivInfo = ({ civTree }) => {
           );
 
           title = l18nTitle ? l18nTitle : title;
-          description = l18nDescription ? l18nDescription : title;
+          description = l18nDescription ? l18nDescription : description;
 
           return (
             <article key={`info-${infoIndex}`}>
