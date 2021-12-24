@@ -81,52 +81,53 @@ const BottomSheetUnit = ({ detail }) => {
         <div className="column">
           <h2>{loadText("stats_detail_title")}</h2>
           <p>
-            <b>HP:</b> {detail.hp}
+            <b>{loadText("hp_stats_name")}:</b> {detail.hp}
           </p>
           <p>
-            <b>Speed:</b> {detail.speed}
+            <b>{loadText("speed_stats_name")}:</b> {detail.speed}
           </p>
           {detail.attack ? (
             <p>
-              <b>Attack:</b> {detail.attack}
+              <b>{loadText("attack_stats_name")}:</b> {detail.attack}
             </p>
           ) : (
             ""
           )}
           {detail.attackSpeed ? (
             <p>
-              <b>Attack speed:</b> {detail.attackSpeed}
+              <b>{loadText("attack_speed_stats_name")}:</b> {detail.attackSpeed}
             </p>
           ) : (
             ""
           )}
           {detail.dps ? (
             <p>
-              <b>DPS:</b> {detail.dps}
+              <b>{loadText("dps_stats_name")}:</b> {detail.dps}
             </p>
           ) : (
             ""
           )}
           {detail.damageType && detail.damageType !== "None" ? (
             <p>
-              <b>Damage Type:</b> {detail.damageType}
+              <b>{loadText("damage_type_stats_name")}:</b> {detail.damageType}
             </p>
           ) : (
             ""
           )}
           {detail.areaOfEffect ? (
             <p>
-              <b>Area Attack:</b> {detail.areaOfEffect}
+              <b>{loadText("area_attack_stats_name")}:</b> {detail.areaOfEffect}
             </p>
           ) : (
             ""
           )}
           <p>
-            <b>Armor:</b> {detail.meleeArmor} / {detail.rangedArmor}
+            <b>{loadText("armor_stats_name")}:</b> {detail.meleeArmor} /{" "}
+            {detail.rangedArmor}
           </p>
           {detail.bonusDamage ? (
             <p>
-              <b>Bonus Damage:</b> {detail.bonusDamage}{" "}
+              <b>{loadText("bonus_damage_stats_name")}:</b> {detail.bonusDamage}{" "}
               {detail.bonusDamageAgainst}{" "}
             </p>
           ) : (
@@ -134,7 +135,7 @@ const BottomSheetUnit = ({ detail }) => {
           )}
 
           <p>
-            <b>Line of sight:</b> {detail.lineOfSight}
+            <b>{loadText("line_of_sight_stats_name")}:</b> {detail.lineOfSight}
           </p>
         </div>
       </article>

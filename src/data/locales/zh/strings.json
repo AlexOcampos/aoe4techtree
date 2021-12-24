@@ -3590,7 +3590,6 @@
     "slow-burning-defenses_DE_customName": "缓燃防御",
     "village-fortresses_DE_customName": "村庄要塞",
     "herdable-sheep_MO_customName": "绵羊",
-    "herdable-sheep_MO_customName": "Sheep",
     "civName_AB": "Abbasid Dynasty",
     "civShortDesc_AB": "RESEARCH, ANTI-CAVALRY, GOLDEN AGE",
     "civLongDesc_AB": "The Abbasid Dynasty pursues a flouriching Golden Age by concentrating structures around their House of Wisdom, allowing them to unlock significant economic advantages. The House of Wisdom also drives progress throught the Ages and grants access to advanced technology. Abbasid camel units are expert at countering enemy cavalry.",
@@ -3752,5 +3751,14 @@
     "infoAndBonus_RU_5_title": "Unique Units",
     "infoAndBonus_RU_5_list_0": "Streltsy: Gunpowder unit which gets stronger when stationary, has a high melee attack, and can be trained for a reduced cost.",
     "infoAndBonus_RU_5_list_1": "Warrior Monk: Inspires nearby units when in combat, providing bonus armor and damage.",
-    "infoAndBonus_RU_5_list_2": "Lodya ships: Can be converted into any type of ship."
+    "infoAndBonus_RU_5_list_2": "Lodya ships: Can be converted into any type of ship.",
+    "speed_stats_name": "Speed",
+    "attack_stats_name": "Attack",
+    "attack_speed_stats_name": "Attack speed",
+    "dps_stats_name": "DPS",
+    "damage_type_stats_name": "Damage Type",
+    "area_attack_stats_name": "Area Attack",
+    "armor_stats_name": "Armor",
+    "bonus_damage_stats_name": "Bonus Damage",
+    "line_of_sight_stats_name": "Line of sight"
 }
