@@ -10991,7 +10991,7 @@
             "type": "type_siege-weapon",
             "role": "role_damage",
             "food": "0",
-            "wood": "400",
+            "wood": "4000",
             "gold": "600",
             "Stone": "0",
             "time": "45",

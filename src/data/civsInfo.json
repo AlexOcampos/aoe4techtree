@@ -1270,9 +1270,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -1443,9 +1443,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -2779,9 +2779,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -2986,9 +2986,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -4417,9 +4417,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -4577,9 +4577,9 @@
                         "availableAge": 2,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -4591,9 +4591,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -4669,9 +4669,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -6016,9 +6016,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -6190,9 +6190,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -7750,9 +7750,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -7948,9 +7948,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -8033,9 +8033,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -9418,9 +9418,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -9585,9 +9585,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -9663,9 +9663,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
-                                "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "id": "cannon-emplacement",
+                                "name": "cannon-emplacement",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -10858,9 +10858,9 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "Cannon Emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]
@@ -12507,9 +12507,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "cannon",
+                                "id": "cannon-emplacement",
                                 "name": "cannon emplacement",
-                                "icon": "cannon.png",
+                                "icon": "cannon-emplacement.png",
                                 "type": "technology"
                             }
                         ]

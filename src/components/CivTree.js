@@ -179,7 +179,7 @@ const CivTree = ({ civTree }) => {
             <BottomSheetUnit detail={detail} />
           )
         ) : (
-          <p style={{ color: "black", marginLeft: "3rem" }}>No data</p>
+          <p style={{ marginLeft: "3rem" }}>No data</p>
         )}
       </BottomSheet>
 
