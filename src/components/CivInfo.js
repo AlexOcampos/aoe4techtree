@@ -13,7 +13,6 @@ const CivInfo = ({ civTree }) => {
   const languages = [
     { label: "english", value: "en" },
     { label: "chinese", value: "zh" },
-    { label: "vietnamese", value: "vi" },
   ];
 
   const handleLanguageChange = (selectedLang) => {
@@ -79,12 +78,12 @@ const CivInfo = ({ civTree }) => {
         <Link to={"/"}>
           <HiMenu /> AoE4 Tech Tree
         </Link>
-        {/* <Select
+        <Select
           options={languages}
           defaultValue={languages.filter((l) => l.value === lang)}
           onChange={handleLanguageChange}
           styles={customStyles}
-        /> */}
+        />
       </nav>
       <div
         className="bg"
