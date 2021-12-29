@@ -164,7 +164,7 @@ const BottomSheetBuilding = ({ detail }) => {
 };
 
 const BottomSheetBuildingContainer = styled.div`
-  color: black;
+  color: white;
   overflow: auto;
   margin: 2rem;
 

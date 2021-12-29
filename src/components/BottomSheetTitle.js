@@ -7,10 +7,7 @@ const BottomSheetTitle = ({ detail }) => {
   const title = l18nName ? l18nName : detail.customName;
   return (
     <BottomSheetTitleContainer>
-      <h1
-        className="popup-black"
-        style={{ color: "black", textTransform: "capitalize" }}
-      >
+      <h1 className="popup-black" style={{ textTransform: "capitalize" }}>
         {title}
       </h1>
     </BottomSheetTitleContainer>
@@ -18,6 +15,7 @@ const BottomSheetTitle = ({ detail }) => {
 };
 
 const BottomSheetTitleContainer = styled.div`
+  color: white;
   @media (max-width: 600px) {
     h1 {
       font-size: 1.7rem;

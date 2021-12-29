@@ -144,7 +144,7 @@ const BottomSheetUnit = ({ detail }) => {
 };
 
 const BottomSheetUnitContainer = styled.div`
-  color: black;
+  color: white;
   overflow: auto;
   margin: 2rem;
 

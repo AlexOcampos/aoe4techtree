@@ -58,6 +58,7 @@ const BottomSheetDescContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   margin: 3 rem;
+  color: white;
 
   .image {
     display: none;
@@ -69,7 +70,6 @@ const BottomSheetDescContainer = styled.div`
   }
 
   .description {
-    color: black;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

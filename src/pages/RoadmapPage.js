@@ -9,6 +9,51 @@ const RoadmapPage = () => {
       <div className="roadmap-container">
         <section>
           <h1>Releases</h1>
+          <h3>1.1.4 - ??/Dic/2021</h3>
+          <ul>
+            <li>
+              <b>Advanced stats color palette</b>
+              <p>
+                Some have complained about the advanced stats section which is
+                too shiny (some even threatened to report me for destroying his
+                corneas 🤣). Your wishes are orders to me.
+              </p>
+              <p>
+                I have modify the color palette. I hope it improves the user
+                experience of the website. If you still don't like it, please
+                use the "feedback" button. I read all your comments.
+              </p>
+            </li>
+            <li>
+              <b>Chinese translations</b>
+              <p>
+                Thanks to 冬会一雪 we have the web translated to chinese. Kudos
+                for him!!
+              </p>
+              <p>
+                If you like to help us and translate the web to your language,
+                you could contact me{" "}
+                <a
+                  href="https://discordapp.com/users/rudyairlines#6990"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ext-link"
+                >
+                  by discord
+                </a>{" "}
+                or
+                <a
+                  href="https://twitter.com/rudyairlines"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ext-link"
+                >
+                  by twitter
+                </a>
+                .
+              </p>
+            </li>
+          </ul>
           <h3>1.1.3 - 22/Dic/2021</h3>
           <ul>
             <li>
