@@ -9,7 +9,7 @@ const RoadmapPage = () => {
       <div className="roadmap-container">
         <section>
           <h1>Releases</h1>
-          <h3>1.1.4 - ??/Dic/2021</h3>
+          <h3>1.1.4 - 29/Dic/2021</h3>
           <ul>
             <li>
               <b>Advanced stats color palette</b>

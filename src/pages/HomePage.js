@@ -10,7 +10,8 @@ const ErrorPage = () => {
     <Wrapper>
       <div className="notification">
         <span>
-          <b>Last update:</b> 2021/12/22 19:00 (unit icons,...){" "}
+          <b>Last update:</b> 2021/12/29 (fix errors, chinese translations,
+          color adv stats,...){" "}
           <Link to={"/roadmap"} className="link">
             <b>[see more details]</b>
           </Link>
@@ -67,10 +68,10 @@ const Wrapper = styled.main`
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: #00bcd4;
+    background-color: #9c27b0;
     display: flex;
     justify-content: space-evenly;
-    color: #000000;
+    color: white;
   }
 
   .link {
