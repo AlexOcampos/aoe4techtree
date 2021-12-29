@@ -74,6 +74,7 @@ const AboutPage = () => {
             </a>{" "}
             for helping me with the unit icons nighmare.
           </p>
+          <p>Thanks to 冬会一雪 who translate the web to chinese.</p>
         </article>
         <article>
           <p>
