@@ -9,6 +9,7 @@ import FloatingButton from "./FloatingButton";
 import BottomSheetTitle from "./BottomSheetTitle";
 import BottomSheetDesc from "./BottomSheetDesc";
 import BottomSheetUnit from "./BottomSheetUnit";
+import BottomSheetEmplacement from "./BottomSheetEmplacement";
 import BottomSheetTech from "./BottomSheetTech";
 import BottomSheetBuilding from "./BottomSheetBuilding";
 import NavbarTreeMobile from "./NavbarTreeMobile";
@@ -25,6 +26,7 @@ export {
   BottomSheetTitle,
   BottomSheetDesc,
   BottomSheetUnit,
+  BottomSheetEmplacement,
   BottomSheetTech,
   BottomSheetBuilding,
   NavbarTreeMobile,

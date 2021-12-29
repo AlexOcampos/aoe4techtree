@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { BottomSheetDesc } from "../components";
+import { BottomSheetDesc } from ".";
 import { useItemDetailContext } from "../context/itemdetail_context";
 
-const BottomSheetBuilding = ({ detail }) => {
+const BottomSheetEmplacement = ({ detail }) => {
   const { loadText } = useItemDetailContext();
   let ageFrom = loadText(`age-${detail.ageId}`);
 
   return (
-    <BottomSheetBuildingContainer>
-      <p style={{ display: "none" }}>Tech</p>
+    <BottomSheetEmplacementContainer>
       <BottomSheetDesc detail={detail} />
+      <p style={{ display: "none" }}>Tech</p>
       <article>
         <div className="column">
           <h2>{loadText("cost_detail_title")}</h2>
@@ -79,12 +79,75 @@ const BottomSheetBuilding = ({ detail }) => {
             <b>{loadText("age_name")}:</b> {ageFrom}
           </p>
         </div>
+        <div className="column">
+          <h2>{loadText("stats_detail_title")}</h2>
+          {detail.attack ? (
+            <p>
+              <b>{loadText("attack_stats_name")}:</b> {detail.attack}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.attackSpeed ? (
+            <p>
+              <b>{loadText("attack_speed_stats_name")}:</b> {detail.attackSpeed}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.dps ? (
+            <p>
+              <b>{loadText("dps_stats_name")}:</b> {detail.dps}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.damageType && detail.damageType !== "None" ? (
+            <p>
+              <b>{loadText("damage_type_stats_name")}:</b> {detail.damageType}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.areaOfEffect ? (
+            <p>
+              <b>{loadText("area_attack_stats_name")}:</b> {detail.areaOfEffect}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.meleeArmor && detail.rangedArmor ? (
+            <p>
+              <b>{loadText("armor_stats_name")}:</b> {detail.meleeArmor} /{" "}
+              {detail.rangedArmor}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.bonusDamage ? (
+            <p>
+              <b>{loadText("bonus_damage_stats_name")}:</b> {detail.bonusDamage}{" "}
+              {detail.bonusDamageAgainst}{" "}
+            </p>
+          ) : (
+            ""
+          )}
+
+          {detail.lineOfSight ? (
+            <p>
+              <b>{loadText("line_of_sight_stats_name")}:</b>{" "}
+              {detail.lineOfSight}
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
       </article>
-    </BottomSheetBuildingContainer>
+    </BottomSheetEmplacementContainer>
   );
 };
 
-const BottomSheetBuildingContainer = styled.div`
+const BottomSheetEmplacementContainer = styled.div`
   color: white;
   overflow: auto;
   margin: 2rem;
@@ -94,7 +157,7 @@ const BottomSheetBuildingContainer = styled.div`
   }
 
   .column {
-    width: 50%;
+    width: 33%;
   }
 
   @media (max-width: 600px) {
@@ -107,4 +170,4 @@ const BottomSheetBuildingContainer = styled.div`
   }
 `;
 
-export default BottomSheetBuilding;
+export default BottomSheetEmplacement;

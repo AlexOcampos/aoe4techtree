@@ -848,8 +848,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -1033,9 +1033,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -2366,8 +2366,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -2567,9 +2567,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -3977,8 +3977,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "Springald Emplacement",
                                 "icon": "Springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -4125,9 +4125,9 @@
                         "availableAge": 2,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -4151,9 +4151,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -4229,9 +4229,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald-emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -5597,8 +5597,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -5771,9 +5771,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -7234,8 +7234,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -7444,9 +7444,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -7572,9 +7572,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -8944,8 +8944,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -9160,9 +9160,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -9232,9 +9232,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -10486,8 +10486,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
@@ -11932,8 +11932,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -11946,8 +11946,8 @@
                         "availableAge": 1,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "Springald",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
                                 "icon": "springald-emplacement.png",
                                 "type": "technology"
                             }
@@ -12050,9 +12050,9 @@
                                 "type": "unit"
                             },
                             {
-                                "id": "boyar's-fortitude",
-                                "name": "boyar's fortitude",
-                                "icon": "boyar's-fortitude.png",
+                                "id": "boyars-fortitude",
+                                "name": "boyars fortitude",
+                                "icon": "boyars-fortitude.png",
                                 "type": "technology"
                             }
                         ]
@@ -12110,9 +12110,9 @@
                         "availableAge": 3,
                         "items": [
                             {
-                                "id": "springald",
-                                "name": "springald",
-                                "icon": "springald.png",
+                                "id": "springald-emplacement",
+                                "name": "springald emplacement",
+                                "icon": "springald-emplacement.png",
                                 "type": "technology"
                             },
                             {
@@ -12476,7 +12476,7 @@
                                 "id": "precision-cross-breeding",
                                 "name": "precision cross-breeding",
                                 "icon": "precision-cross-breeding.png",
-                                "type": "unit"
+                                "type": "technology"
                             }
                         ]
                     },

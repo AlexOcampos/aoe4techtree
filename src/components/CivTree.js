@@ -5,6 +5,7 @@ import {
   BottomSheetTitle,
   BottomSheetUnit,
   BottomSheetTech,
+  BottomSheetEmplacement,
   BottomSheetBuilding,
 } from "../components";
 
@@ -175,6 +176,8 @@ const CivTree = ({ civTree }) => {
             <BottomSheetTech detail={detail} />
           ) : detail.genre === "genre_structure" ? (
             <BottomSheetBuilding detail={detail} />
+          ) : detail.genre === "genre_emplacement" ? (
+            <BottomSheetEmplacement detail={detail} />
           ) : (
             <BottomSheetUnit detail={detail} />
           )

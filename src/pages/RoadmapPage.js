@@ -53,6 +53,27 @@ const RoadmapPage = () => {
                 .
               </p>
             </li>
+            <li>
+              <b>Fix error with some units and technologies</b>
+              <p>
+                There are some mistakes wich I've corrected:
+                <ul>
+                  <li>
+                    Cannon unit and Cannon emplacement has wrong stats and
+                    descriptions
+                  </li>
+                  <li>Boyar's fortitude tech had no data</li>
+                  <li>
+                    Rus' "Precision Cross Breeding" technology (it was showed as
+                    a unit previously)
+                  </li>
+                  <li>
+                    Springald unit and Springald emplacement tech has wrong
+                    stats and descriptions
+                  </li>
+                </ul>
+              </p>
+            </li>
           </ul>
           <h3>1.1.3 - 22/Dic/2021</h3>
           <ul>

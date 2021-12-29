@@ -9,6 +9,7 @@ const BottomSheetUnit = ({ detail }) => {
   return (
     <BottomSheetUnitContainer>
       <BottomSheetDesc detail={detail} />
+      <p style={{ display: "none" }}>Tech</p>
       <article>
         <div className="column">
           <h2>{loadText("cost_detail_title")}</h2>
