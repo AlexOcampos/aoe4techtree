@@ -1941,6 +1941,12 @@
                                 "name": "Hardened Spearman",
                                 "icon": "hardened-spearman.png",
                                 "type": "unit"
+                            },
+                            {
+                                "id": "phalanx",
+                                "name": "phalanx",
+                                "icon": "phalanx.png",
+                                "type": "technology"
                             }
                         ]
                     },
@@ -2069,12 +2075,6 @@
                                 "id": "spice-roads",
                                 "name": "spice roads",
                                 "icon": "spice-roads.png",
-                                "type": "technology"
-                            },
-                            {
-                                "id": "phalanx",
-                                "name": "phalanx",
-                                "icon": "phalanx.png",
                                 "type": "technology"
                             }
                         ]
@@ -2433,12 +2433,6 @@
                                 "name": "armored caravans",
                                 "icon": "armored-caravans.png",
                                 "type": "technology"
-                            },
-                            {
-                                "id": "camel-handling",
-                                "name": "camel handling",
-                                "icon": "camel-handling.png",
-                                "type": "technology"
                             }
                         ]
                     },
@@ -2483,6 +2477,12 @@
                                 "id": "military-academy",
                                 "name": "Military academy",
                                 "icon": "military-academy.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "camel-handling",
+                                "name": "camel handling",
+                                "icon": "camel-handling.png",
                                 "type": "technology"
                             }
                         ]
@@ -2846,18 +2846,6 @@
                                 "name": "grand bazaar",
                                 "icon": "grand-bazaar.png",
                                 "type": "technology"
-                            },
-                            {
-                                "id": "camel-barding",
-                                "name": "camel barding",
-                                "icon": "camel-barding.png",
-                                "type": "technology"
-                            },
-                            {
-                                "id": "composite-bows",
-                                "name": "composite bows",
-                                "icon": "composite-bows.png",
-                                "type": "technology"
                             }
                         ]
                     },
@@ -2897,6 +2885,12 @@
                                 "name": "Angled Surfaces",
                                 "icon": "angled-surfaces.png",
                                 "type": "technology"
+                            },
+                            {
+                                "id": "camel-barding",
+                                "name": "camel barding",
+                                "icon": "camel-barding.png",
+                                "type": "technology"
                             }
                         ]
                     },
@@ -2929,6 +2923,12 @@
                                 "name": "elite-camel-archer",
                                 "icon": "elite-camel-archer.png",
                                 "type": "unit"
+                            },
+                            {
+                                "id": "composite-bows",
+                                "name": "composite bows",
+                                "icon": "composite-bows.png",
+                                "type": "technology"
                             }
                         ]
                     },
