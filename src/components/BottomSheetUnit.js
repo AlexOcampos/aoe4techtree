@@ -81,12 +81,20 @@ const BottomSheetUnit = ({ detail }) => {
         </div>
         <div className="column">
           <h2>{loadText("stats_detail_title")}</h2>
-          <p>
-            <b>{loadText("hp_stats_name")}:</b> {detail.hp}
-          </p>
-          <p>
-            <b>{loadText("speed_stats_name")}:</b> {detail.speed}
-          </p>
+          {detail.hp ? (
+            <p>
+              <b>{loadText("hp_stats_name")}:</b> {detail.hp}
+            </p>
+          ) : (
+            ""
+          )}
+          {detail.speed ? (
+            <p>
+              <b>{loadText("speed_stats_name")}:</b> {detail.speed}
+            </p>
+          ) : (
+            ""
+          )}
           {detail.attack ? (
             <p>
               <b>{loadText("attack_stats_name")}:</b> {detail.attack}
@@ -122,10 +130,14 @@ const BottomSheetUnit = ({ detail }) => {
           ) : (
             ""
           )}
-          <p>
-            <b>{loadText("armor_stats_name")}:</b> {detail.meleeArmor} /{" "}
-            {detail.rangedArmor}
-          </p>
+          {detail.meleeArmor && detail.rangedArmor ? (
+            <p>
+              <b>{loadText("armor_stats_name")}:</b> {detail.meleeArmor} /{" "}
+              {detail.rangedArmor}
+            </p>
+          ) : (
+            ""
+          )}
           {detail.bonusDamage ? (
             <p>
               <b>{loadText("bonus_damage_stats_name")}:</b> {detail.bonusDamage}{" "}
@@ -135,9 +147,14 @@ const BottomSheetUnit = ({ detail }) => {
             ""
           )}
 
-          <p>
-            <b>{loadText("line_of_sight_stats_name")}:</b> {detail.lineOfSight}
-          </p>
+          {detail.lineOfSight ? (
+            <p>
+              <b>{loadText("line_of_sight_stats_name")}:</b>{" "}
+              {detail.lineOfSight}
+            </p>
+          ) : (
+            ""
+          )}
         </div>
       </article>
     </BottomSheetUnitContainer>
