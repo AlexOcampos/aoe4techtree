@@ -3799,5 +3799,13 @@
     "area_attack_stats_name": "Area Attack",
     "armor_stats_name": "Armor",
     "bonus_damage_stats_name": "Bonus Damage",
-    "line_of_sight_stats_name": "Line of sight"
+    "line_of_sight_stats_name": "Line of sight",
+    "damageType_Ranged": "Ranged",
+    "damageType_Melee": "Melee",
+    "damageType_True": "True",
+    "damageType_None": "None",
+    "damageType_Siege": "Siege",
+    "damageType_Fire": "Fire",
+    "areaOfEffect_Yes": "Yes",
+    "areaOfEffect_No": "No"
 }

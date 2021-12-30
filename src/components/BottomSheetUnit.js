@@ -5,6 +5,8 @@ import { useItemDetailContext } from "../context/itemdetail_context";
 const BottomSheetUnit = ({ detail }) => {
   const { loadText } = useItemDetailContext();
   let ageFrom = loadText(`age-${detail.ageId}`);
+  let damageType = loadText(`damageType_${detail.damageType}`);
+  let areaOfEffect = loadText(`areaOfEffect_${detail.areaOfEffect}`);
 
   return (
     <BottomSheetUnitContainer>
@@ -118,14 +120,16 @@ const BottomSheetUnit = ({ detail }) => {
           )}
           {detail.damageType && detail.damageType !== "None" ? (
             <p>
-              <b>{loadText("damage_type_stats_name")}:</b> {detail.damageType}
+              <b>{loadText("damage_type_stats_name")}:</b>{" "}
+              {damageType ? damageType : detail.damageType}
             </p>
           ) : (
             ""
           )}
           {detail.areaOfEffect ? (
             <p>
-              <b>{loadText("area_attack_stats_name")}:</b> {detail.areaOfEffect}
+              <b>{loadText("area_attack_stats_name")}:</b>{" "}
+              {areaOfEffect ? areaOfEffect : detail.areaOfEffect}
             </p>
           ) : (
             ""

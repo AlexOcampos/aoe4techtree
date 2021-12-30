@@ -3799,5 +3799,13 @@
     "area_attack_stats_name": "范围攻击",
     "armor_stats_name": "护甲",
     "bonus_damage_stats_name": "伤害加成",
-    "line_of_sight_stats_name": "视野范围"
+    "line_of_sight_stats_name": "视野范围",
+    "damageType_Ranged": "远程",
+    "damageType_Melee": "近战",
+    "damageType_True": "True",
+    "damageType_None": "None",
+    "damageType_Siege": "Siege",
+    "damageType_Fire": "Fire",
+    "areaOfEffect_Yes": "是",
+    "areaOfEffect_No": "否"
 }
