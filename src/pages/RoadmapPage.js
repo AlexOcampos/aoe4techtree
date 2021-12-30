@@ -64,12 +64,24 @@ const RoadmapPage = () => {
                   </li>
                   <li>Boyar's fortitude tech had no data</li>
                   <li>
-                    Rus' "Precision Cross Breeding" technology (it was showed as
+                    Rus' "Precision Cross Breeding" technology (it was shown as
                     a unit previously)
                   </li>
                   <li>
                     Springald unit and Springald emplacement tech has wrong
                     stats and descriptions
+                  </li>
+                  <li>
+                    "Angled Surfaces" name (previously "Wedge Rivets") on
+                    english translations
+                  </li>
+                  <li>
+                    Chinese pyrotechnics moved from siege workshop to university
+                  </li>
+                  <li>
+                    Move some Abbasid technologies: Phalanx to Barracks, Camel
+                    Handling and Camel Barding to Blacksmith, Composite Bows to
+                    Archery Range
                   </li>
                 </ul>
               </p>
