@@ -211,10 +211,6 @@ const RoadmapPage = () => {
           <h1>Next steps</h1>
           <ul>
             <li>
-              <b>Unit icons</b>
-              <p>I working on get from the file games the unit icons.</p>
-            </li>
-            <li>
               <b>Redesign tech tree</b>
               <p>
                 Some of you hate the current horizontal scroll, other love it.
