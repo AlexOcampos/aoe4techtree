@@ -6252,12 +6252,6 @@
                                 "name": "reusable barrels",
                                 "icon": "reusable-barrels.png",
                                 "type": "technology"
-                            },
-                            {
-                                "id": "pyrotechnics",
-                                "name": "pyrotechnics",
-                                "icon": "pyrotechnics.png",
-                                "type": "technology"
                             }
                         ]
                     },
@@ -6328,6 +6322,12 @@
                                 "id": "elite-army-tactics",
                                 "name": "elite army tactics",
                                 "icon": "elite-army-tactics.png",
+                                "type": "technology"
+                            },
+                            {
+                                "id": "pyrotechnics",
+                                "name": "pyrotechnics",
+                                "icon": "pyrotechnics.png",
                                 "type": "technology"
                             }
                         ]
