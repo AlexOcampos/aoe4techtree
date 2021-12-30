@@ -3802,10 +3802,10 @@
     "line_of_sight_stats_name": "视野范围",
     "damageType_Ranged": "远程",
     "damageType_Melee": "近战",
-    "damageType_True": "True",
-    "damageType_None": "None",
-    "damageType_Siege": "Siege",
-    "damageType_Fire": "Fire",
+    "damageType_True": "真",
+    "damageType_None": "无",
+    "damageType_Siege": "攻城",
+    "damageType_Fire": "火焰",
     "areaOfEffect_Yes": "是",
     "areaOfEffect_No": "否"
 }
