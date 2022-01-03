@@ -4293,7 +4293,7 @@
                         "icon": "mill.png",
                         "items": [
                             {
-                                "id": "enclosures",
+                                "id": "enclosure",
                                 "name": "enclosures",
                                 "icon": "enclosures.png",
                                 "type": "technology",
