@@ -1,40 +1,52 @@
-import React from "react";
-import { Title } from "../components";
-import styled from "styled-components";
-import { urlStatic } from "../utils/constants";
+import React from 'react'
+import { Title } from '../components'
+import styled from 'styled-components'
+import { urlStatic } from '../utils/constants'
 
 const AboutPage = () => {
   return (
     <Wrapper>
-      <div className="content">
+      <div className='content'>
+        <article>
+          <p>This project will disappear on Oct 27, 2022.</p>
+          <p>
+            Sorry but a big effort to maintain it updated is needed, and I'm
+            only one person without any kind of suppor. For other side, I have a
+            lot of hype with the game, but it disappointed me.
+          </p>
+          <p>
+            If someone would like to continue the project all the code is
+            available on my github: https://github.com/AlexOcampos/aoe4techtree
+          </p>
+        </article>
         <article>
           <h2>About the project:</h2>
           <p>
-            A project by{" "}
+            A project by{' '}
             <a
-              href="https://twitter.com/rudyairlines"
-              target="_blank"
-              rel="noreferrer"
+              href='https://twitter.com/rudyairlines'
+              target='_blank'
+              rel='noreferrer'
             >
               rudyairlines
             </a>
-            .{" "}
+            .{' '}
           </p>
           <p>Do you want to contribute? Contact me.</p>
-          <div className="support">
+          <div className='support'>
             <p>
               If you like what I do, encourage me to keep creating nerd stuffs.
             </p>
             <p>You can buy me a coffee☕️!</p>
             <a
-              href="https://www.buymeacoffee.com/rudyairlines"
-              target="_blank"
-              rel="noreferrer"
+              href='https://www.buymeacoffee.com/rudyairlines'
+              target='_blank'
+              rel='noreferrer'
             >
               <img
-                className="support-logo"
+                className='support-logo'
                 src={`${urlStatic}/bmc-logo.png`}
-                alt=""
+                alt=''
               />
             </a>
           </div>
@@ -42,36 +54,36 @@ const AboutPage = () => {
         <article>
           <h2>Contributors:</h2>
           <p>
-            Special thanks to{" "}
+            Special thanks to{' '}
             <a
-              href="https://www.twitch.tv/pinch3terneira"
-              target="_blank"
-              rel="noreferrer"
+              href='https://www.twitch.tv/pinch3terneira'
+              target='_blank'
+              rel='noreferrer'
             >
               Pinch3Terneira
-            </a>{" "}
+            </a>{' '}
             for his colaboration in the project.
           </p>
           <p>
-            Also thanks to MugenNoSora who make{" "}
+            Also thanks to MugenNoSora who make{' '}
             <a
-              href="https://docs.google.com/spreadsheets/d/1LG0We2pTFZsbFm_k1SKLix8gxSq_9n5R_Ic3G2tVzBg"
-              target="_blank"
-              rel="noreferrer"
+              href='https://docs.google.com/spreadsheets/d/1LG0We2pTFZsbFm_k1SKLix8gxSq_9n5R_Ic3G2tVzBg'
+              target='_blank'
+              rel='noreferrer'
             >
               this great document
-            </a>{" "}
+            </a>{' '}
             which inspired me and help me to make this website.
           </p>
           <p>
-            Thanks to{" "}
+            Thanks to{' '}
             <a
-              href="https://discordapp.com/users/ipieren#5351"
-              target="_blank"
-              rel="noreferrer"
+              href='https://discordapp.com/users/ipieren#5351'
+              target='_blank'
+              rel='noreferrer'
             >
               Mayank Apte
-            </a>{" "}
+            </a>{' '}
             for helping me with the unit icons nighmare.
           </p>
           <p>Thanks to 冬会一雪 who translate the web to chinese.</p>
@@ -85,8 +97,8 @@ const AboutPage = () => {
       </div>
       <Title />
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.section`
   height: 100vh;
@@ -117,5 +129,5 @@ const Wrapper = styled.section`
   .support-logo {
     height: 48px;
   }
-`;
-export default AboutPage;
+`
+export default AboutPage
