@@ -8,6 +8,7 @@ const AboutPage = () => {
     <Wrapper>
       <div className='content'>
         <article>
+          <h2>See you folks</h2>
           <p>This project will disappear on Oct 27, 2022.</p>
           <p>
             Sorry but a big effort to maintain it updated is needed, and I'm
@@ -19,7 +20,7 @@ const AboutPage = () => {
             available on my github: https://github.com/AlexOcampos/aoe4techtree
           </p>
         </article>
-        <article>
+        {/* <article>
           <h2>About the project:</h2>
           <p>
             A project by{' '}
@@ -33,25 +34,8 @@ const AboutPage = () => {
             .{' '}
           </p>
           <p>Do you want to contribute? Contact me.</p>
-          <div className='support'>
-            <p>
-              If you like what I do, encourage me to keep creating nerd stuffs.
-            </p>
-            <p>You can buy me a coffee☕️!</p>
-            <a
-              href='https://www.buymeacoffee.com/rudyairlines'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <img
-                className='support-logo'
-                src={`${urlStatic}/bmc-logo.png`}
-                alt=''
-              />
-            </a>
-          </div>
-        </article>
-        <article>
+        </article> */}
+        {/* <article>
           <h2>Contributors:</h2>
           <p>
             Special thanks to{' '}
@@ -87,7 +71,7 @@ const AboutPage = () => {
             for helping me with the unit icons nighmare.
           </p>
           <p>Thanks to 冬会一雪 who translate the web to chinese.</p>
-        </article>
+        </article> */}
         <article>
           <p>
             Age of Empires IV © Microsoft Corporation. aoe4techtree is not
